@@ -77,7 +77,7 @@ export function getLogoSmall() {
  */
 export function getDefaultTheme() {
     // possible ["darkTheme", "lightTheme", "midnightTheme"]
-    return "midnightTheme";
+    return "lightTheme";
 }
 
 /**

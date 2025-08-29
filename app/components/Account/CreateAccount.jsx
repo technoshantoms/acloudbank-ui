@@ -373,7 +373,6 @@ class CreateAccount extends React.Component {
                 >
                     <Translate content="wallet.wallet_browser" />
                 </h4>
-
                 <Translate
                     style={{textAlign: "left"}}
                     component="p"
@@ -386,6 +385,15 @@ class CreateAccount extends React.Component {
                     component="p"
                     content="wallet.create_account_text_you_should_take_the_time_to_back_up_your_account"
                 />
+
+                <p>
+                    {!hasWallet ? (
+                        <Translate
+                            content="wallet.has_wallet"
+                            wallet_name={getWalletName()}
+                        />
+                    ) : null}
+                </p>
 
                 <Translate
                     style={{textAlign: "left"}}
@@ -411,11 +419,10 @@ class CreateAccount extends React.Component {
                     component="p"
                     content="wallet.create_account_text_3_you_can_create_a_brainkey"
                 />
-                <Translate
-                    style={{textAlign: "left", marginTop: "10px"}}
-                    unsafe
+                 <Translate
+                    style={{textAlign: "left"}}
                     component="p"
-                    content="wallet.since_your_wallet_is_on_your_browser_locally"
+                    content="wallet.create_account_text"
                 />
 
                 {firstAccount ? (
@@ -432,9 +439,17 @@ class CreateAccount extends React.Component {
                         content="wallet.not_first_account"
                     />
                 )}
+
+                {/* {this.state.hide_refcode ? null :
+                    <div>
+                        <RefcodeInput ref="refcode" label="refcode.refcode_optional" expandable={true}/>
+                        <br/>
+                    </div>
+                } */}
             </div>
         );
     }
+
     _renderBackup() {
         return (
             <div className="backup-submit">

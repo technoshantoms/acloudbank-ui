@@ -42,20 +42,13 @@ class ShowcaseGrid extends Component {
                 disabled: hasAccount
                     ? false
                     : "Please login to use this functionality"
-            },
-            {
-                title: "showcases.voting.title",
+            },{
+                title: "showcases.merchant_protocol.title",
                 target: event => {
-                    if (hasAccount) {
-                        thiz.props.history.push(
-                            "/account/" +
-                                this.state.currentAccount.get("name") +
-                                "/voting"
-                        );
-                    }
+                    thiz.props.history.push("/invoice/request");
                 },
-                description: "showcases.voting.description",
-                icon: "voting",
+                description: "showcases.merchant_protocol.description",
+                icon: "merchant",
                 disabled: hasAccount
                     ? false
                     : "Please login to use this functionality"
@@ -118,31 +111,29 @@ class ShowcaseGrid extends Component {
                     : "Please login to use this functionality"
             },
             {
-                title: "showcases.merchant_protocol.title",
-                target: event => {
-                    thiz.props.history.push("/invoice/request");
-                },
-                description: "showcases.merchant_protocol.description",
-                icon: "merchant",
-                disabled: hasAccount
-                    ? false
-                    : "Please login to use this functionality"
-            },
-            {
-                title: "showcases.timed_transfer.title",
-                target: () => {},
-                description: "showcases.timed_transfer.description",
-                icon: "alarm",
-                disabled: true,
-                comingSoon: true
-            },
-            {
                 title: "showcases.instant_trade.title",
                 target: event => {
                     thiz.props.history.push("/instant-trade");
                 },
                 description: "showcases.instant_trade.description",
                 icon: "instant-trade",
+                disabled: hasAccount
+                    ? false
+                    : "Please login to use this functionality"
+            },
+            {
+                title: "showcases.voting.title",
+                target: event => {
+                    if (hasAccount) {
+                        thiz.props.history.push(
+                            "/account/" +
+                                this.state.currentAccount.get("name") +
+                                "/voting"
+                        );
+                    }
+                },
+                description: "showcases.voting.description",
+                icon: "voting",
                 disabled: hasAccount
                     ? false
                     : "Please login to use this functionality"

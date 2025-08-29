@@ -374,26 +374,56 @@ class CreateAccount extends React.Component {
                     <Translate content="wallet.wallet_browser" />
                 </h4>
 
-                <p>
-                    {!hasWallet ? (
-                        <Translate
-                            content="wallet.has_wallet"
-                            wallet_name={getWalletName()}
-                        />
-                    ) : null}
-                </p>
-
                 <Translate
                     style={{textAlign: "left"}}
                     component="p"
-                    content="wallet.create_account_text"
+                    content="wallet.create_account_text_when_you_create_your_first_rsquared_account"
+                />
+
+                <Translate
+                    style={{textAlign: "left"}}
+                    unsafe
+                    component="p"
+                    content="wallet.create_account_text_you_should_take_the_time_to_back_up_your_account"
+                />
+
+                <Translate
+                    style={{textAlign: "left"}}
+                    unsafe
+                    component="p"
+                    content="wallet.create_account_text_there_are_a_few_ways_to_do_this"
+                />
+                <Translate
+                    style={{textAlign: "left"}}
+                    unsafe
+                    component="p"
+                    content="wallet.create_account_text_1_you_can_create_a_backup_file"
+                />
+                <Translate
+                    style={{textAlign: "left"}}
+                    unsafe
+                    component="p"
+                    content="wallet.create_account_text_2_you_can_access_and_write_down_your_private_key"
+                />
+                <Translate
+                    style={{textAlign: "left", marginTop: "10px"}}
+                    unsafe
+                    component="p"
+                    content="wallet.create_account_text_3_you_can_create_a_brainkey"
+                />
+                <Translate
+                    style={{textAlign: "left", marginTop: "10px"}}
+                    unsafe
+                    component="p"
+                    content="wallet.since_your_wallet_is_on_your_browser_locally"
                 />
 
                 {firstAccount ? (
                     <Translate
                         style={{textAlign: "left"}}
+                        unsafe
                         component="p"
-                        content="wallet.first_account_paid"
+                        content="wallet.acquiring_holding_trading"
                     />
                 ) : (
                     <Translate
@@ -402,17 +432,9 @@ class CreateAccount extends React.Component {
                         content="wallet.not_first_account"
                     />
                 )}
-
-                {/* {this.state.hide_refcode ? null :
-                    <div>
-                        <RefcodeInput ref="refcode" label="refcode.refcode_optional" expandable={true}/>
-                        <br/>
-                    </div>
-                } */}
             </div>
         );
     }
-
     _renderBackup() {
         return (
             <div className="backup-submit">

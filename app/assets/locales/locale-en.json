@@ -22,9 +22,9 @@
         "contacts": "Contacts",
         "create_account": "Create account",
         "create_new": "Create A New Account",
-        "credit_offer": "Exchange Management",
+        "credit_offer": "Credit Management",
         "deactivate_suspicious_proposals": "Hide approve for suspicious proposals",
-        "deposit": "Deposit KES",
+        "deposit": "Deposit ACB",
         "deposit_address": "Your deposit address is your account name",
         "deposit_withdraw": "Deposit/Withdraw",
         "download_history": "Download History",
@@ -66,8 +66,8 @@
         "inVestingBalances": "In share Balances",
         "in_open": "This is the amount of %(asset)s you have in open orders.",
         "in_open_value": "This is the estimated value of the %(asset)s you have in open orders.",
-        "intro_text_1": "The sovereign-OS corporate entity",
-        "intro_text_2": "<b>The DEX</b> is inherently decentralized, enabling you to trade the KES Bank core token (KES) and a range of trustless price-stable, market-pegged assets such as bitUSD, bitCNY, bitBTC, bitGold and more. These assets can all be traded with <b>zero</b> counter-party risk, putting you in total control of your funds.",
+        "intro_text_1": "The decentralized corporate database",
+        "intro_text_2": "<b>The DEX</b> is inherently decentralized, enabling you to trade the ACB Database core Assets (ACB) and a range of trustless price-stable, market-pegged assets such as bitUSD, bitCNY, bitBTC, bitGold and more. These assets can all be traded with <b>zero</b> counter-party risk, putting you in total control of your funds.",
         "intro_text_3": "<b>The DEX</b> also enables creation of user-issued assets (UIAs), which can be traded against any other UIAs or trustless assets on the platform.  One well-known asset owner on The DEX is <b>OpenLedger</b>, offering a host of assets including BTC, ETH, STEEM, DASH, LTC, DOGE, and many more",
         "intro_text_4": "This gives cryptocurrency traders a unique blend of traditional and decentralized trading, all in a familiar exchange interface. Happy trading!",
         "intro_text_title": "Welcome to %(wallet_name)s",
@@ -114,7 +114,7 @@
             "fee_allocation": "Fee Allocation",
             "fee_division": "Fee Division",
             "fee_division_text": {
-                "paragraph_1": "Every time %(account)s pays a transaction fee, that fee is divided among several different accounts. The network takes %(fee_share_network)s%. The Lifetime Member who referred %(account)s takes %(fee_share_ltm)s%.",
+                "paragraph_1": "Every time %(account)s pays a transaction fee, that fee is divided among several different accounts. The network ta ACB %(fee_share_network)s%. The Lifetime Member who referred %(account)s taACB %(fee_share_ltm)s%.",
                 "paragraph_2": "The registrar is the account that paid the transaction fee to register %(account)s with the network and decide how to divide the remaining %(fee_share_registrar)s% between themselves and their own Affiliate Referrer program. %(account)s's registrar chose to share %(fee_share_affiliate)s% of the total fee with the Affiliate Referrer.",
                 "paragraph_3": "Fee shares, market rewards and other rewards is found on the share Balances page"
             },
@@ -204,12 +204,12 @@
             "new_memo": "New memo key",
             "new_owner": "New owner key",
             "owner": "Owner Permissions",
-            "password_model": "KES bank",
+            "password_model": "AcloudBank DB",
             "password_model_1": "If you want to be able to login from anywhere using only your password and account name, you can use this page to add new keys to your permissions. If you also want to remove the original keys, you can do so in the active/owner permissions tabs.",
             "password_model_2": "Add password generated keys",
             "private": "Private key (WIF - Bank Import Format)",
             "public": "Public key",
-            "publish": "Save",
+            "publish": "Vote",
             "publish_prediction": "Publish",
             "remove_proxy": "Remove proxy",
             "remove_text": "Remove",
@@ -280,7 +280,7 @@
         "start_typing_to_search": "Start typing to search for accounts",
         "submit_orders": "Submit",
         "total": "Total ({asset})",
-        "total_estimate": "This is the estimated value of all your assets, including any hidden assets, open orders, debt and collateral. The estimate is done using only live AcloudBank data and may not be perfectly accurate.",
+        "total_estimate": "This is the estimated value of all your assets, including any hidden assets, open orders, debt and collateral. The estimate is done using only live blockchain data and may not be perfectly accurate.",
         "total_value": "Total value",
         "trade": "Trade",
         "transactions": {
@@ -302,7 +302,7 @@
             "base": "Base asset amount",
             "base_name": "Base asset",
             "cer_warning_1": "Warning",
-            "cer_warning_2": "Make sure your core exchange rate is higher than the market price, otherwise people will buy your token from the market and drain your fee pool via implicit arbitrage. The core exchange rate should be updated regularly to reflect market pricing of your asset.",
+            "cer_warning_2": "Make sure your core exchange rate is higher than the market price, otherwise people will buy your Assets from the market and drain your fee pool via implicit arbitrage. The core exchange rate should be updated regularly to reflect market pricing of your asset.",
             "charge_market_fee": "Enable market fee",
             "committee_fed_asset": "Allow committee members to provide feeds",
             "condition": "Condition (max 60 characters)",
@@ -411,6 +411,7 @@
             "info": "Info",
             "join_committee": "Join committee",
             "join_witnesses": "Join Witnesses",
+             "update_witness": "Update Witness",
             "line": "Line",
             "max_pay": "Maximum total pay",
             "missing": "Needed",
@@ -422,7 +423,7 @@
             "proxy_current": "Your current proxy is",
             "proxy_known": "Or choose an account as your proxy",
             "proxy_short": "Proxy",
-            "publish": "Save",
+            "publish": "Vote",
             "recycled": "Recycled",
             "reject_worker": "Reject",
             "remove_committee": "Remove",
@@ -454,7 +455,7 @@
             "workers": "Budget Items",
             "workers_short": "Workers"
         },
-        "voting": "Lock Funds",
+        "voting": "Lock Funds Securely",
         "welcome": "Welcome to %(wallet_name)s",
         "whitelist": {
             "add": "Add to whitelist",
@@ -503,7 +504,7 @@
         "ws_status": "Full node connection status"
     },
     "assets": {
-        "KES": "(129 KES = $1) KES is the core asset of the KES Bank Blockchain"
+        "CLOUD": "(1 ACB = $100) ACB is the core asset of the ACB Database"
     },
     "boolean": {
         "false": "False",
@@ -575,22 +576,22 @@
         "add_whitelist": "Add white account",
         "asset": "Asset",
         "available_amount": "Available",
-        "borrow": "Exchange",
+        "borrow": "Loan",
         "borrow_amount": "Amount",
         "closed": "Closed",
-        "create": "Create exchange",
+        "create": "Create p2p Loan",
         "credit_debt_account": "Account",
-        "credit_debts": "Exchange Debts",
-        "credit_offers": "Exchange Offers",
+        "credit_debts": "Credit Debts",
+        "credit_offers": "Credit Offers",
         "credit_right_account": "Account",
-        "credit_rights": "Exchange Rights",
+        "credit_rights": "Credit Rights",
         "current_available_balance": "Current Available Balance",
         "current_balance": "Available",
         "debt": "Debt",
-        "edit": "Modify Exchange",
+        "edit": "Modify p2p Loan",
         "estimated_fee": "Estimated fee",
         "fee_rate": "Rate",
-        "info_borrow_err": "Can't exchange from oneself ！",
+        "info_borrow_err": "Can't borrow from oneself ！",
         "invalid_min_bigger_amount": "Min cannot be bigger than amount",
         "list_repay_period": {
             "period_-1": "No limit",
@@ -606,8 +607,8 @@
         },
         "loan_amount": "Maximum",
         "min_borrow": "Minimum",
-        "min_loan_bigger_than_balance": "Min to loan > Total Exchange balance (%(min)s > %(balance)s)",
-        "mortgage_assets": "Exchange & get:",
+        "min_loan_bigger_than_balance": "Min to loan > Total p2p Loan balance (%(min)s > %(balance)s)",
+        "mortgage_assets": "Collateral",
         "my_debt": "My debt",
         "number_is_to_big": "You have used a big number which caused overflow",
         "operate": "Action",
@@ -622,7 +623,7 @@
         "price": "Price",
         "redemption_collateral": "Redeem collateral",
         "repay": "Repay",
-        "repay_period": "Settlement period",
+        "repay_period": "Repay period",
         "status": "Status",
         "tip_fee_rate": "Expressed as a percentage",
         "tip_pawn_amount": "The amount of collateral required for each unit of assets lent",
@@ -1041,7 +1042,7 @@
                 "market_fee_referral_taker_fee_percent": "Taker fee percent",
                 "stealth_supply": "Stealth supply"
             },
-            "testnet_warning": "The KES token used in this Test Net is purely for test purposes, and is not the token that will be used in Main Net. The RQETH token used in this Test Net is also purely for test purposes.",
+            "testnet_warning": "The ACB Assets used in this Test Net is purely for test purposes, and is not the Assets that will be used in Main Net. The RQETH Assets used in this Test Net is also purely for test purposes.",
             "title": "Asset",
             "whitelist": {
                 "blacklist_authorities": "Blacklist authorities",
@@ -1161,10 +1162,10 @@
             "create": "Create a new worker proposal",
             "create_text_1": "In order to create your new worker, please fill in the form below. The worker will be created using your currently active account, which must already be a lifetime member.",
             "create_text_2": "Consider carefully the parameters you choose as they can not be changed once you've published your worker.",
-            "daily_pay": "Daily pay (KES)",
+            "daily_pay": "Daily pay (ACB)",
             "date_text": "The start date should be at least a week into the future in order to allow people the time to discover, evaluate and vote for your worker.",
             "name_text": "The name of your worker should be short and descriptive, something like this: 'Worker Purpose - Account Name'",
-            "pay_text": "The daily pay defines how much you want to be paid per day and is defined in KES.",
+            "pay_text": "The daily pay defines how much you want to be paid per day and is defined in ACB.",
             "period": "Duration",
             "title": "Worker name",
             "url_text": "You should supply a website, github document or google doc that describes in more detail the purpose of the worker and how you intend to use the worker pay.",
@@ -1175,7 +1176,7 @@
     },
     "external_service_provider": {
         "bridge": {
-            "description": "Bridges are external service providers that allow you to swap assets in and out of the BitShares Blockchain. For example, you can send your BTC on the Bitcoin AcloudBank to a Bridge, who will swap it and give you an equivalent amount of BTS or another Gateways UIA on the BitShares AcloudBank (for a fee of course). Normally, a Bridge does not hold your funds, but trust is required that they send you back the proper amount of the target asset. As it is an external service providers you implicitly agree to their Terms and Conditions by using any of their services or assets.",
+            "description": "Bridges are external service providers that allow you to swap assets in and out of the BitShares Blockchain. For example, you can send your BTC on the Bitcoin Blockchain to a Bridge, who will swap it and give you an equivalent amount of BTS or another Gateways UIA on the BitShares Blockchain (for a fee of course). Normally, a Bridge does not hold your funds, but trust is required that they send you back the proper amount of the target asset. As it is an external service providers you implicitly agree to their Terms and Conditions by using any of their services or assets.",
             "short": "Bridge",
             "what_is": "What is a Bridge?"
         },
@@ -1183,7 +1184,7 @@
         "disabled_asset_2": "For more information visit Settings -> Entry External Service Providers. For any issues or questions please contact the gateway operator directly.",
         "expect_more": "If you expect to see more deposit and withdraw options for your assets, please check the External Service Providers in Settings > General.",
         "gateway": {
-            "description": "Gateways are external service providers that allow you to deposit, trade and withdraw assets into the BitShares AcloudBank that are not native to it. For example, you can send your BTC on the Bitcoin AcloudBank to a Gateway, who will in turn give you an UIA (user issued asset) on the BitShares Blockchain, with the promise that you can withdraw it again (for a fee of course). While you are holding such an UIA on the BitShares Blockchain, the Gateway becomes the custodian of your funds. As it is external service providers you implicitly agree to their Terms and Conditions by using any of their services or assets.",
+            "description": "Gateways are external service providers that allow you to deposit, trade and withdraw assets into the BitShares Blockchain that are not native to it. For example, you can send your BTC on the Bitcoin Blockchain to a Gateway, who will in turn give you an UIA (user issued asset) on the BitShares Blockchain, with the promise that you can withdraw it again (for a fee of course). While you are holding such an UIA on the BitShares Blockchain, the Gateway becomes the custodian of your funds. As it is external service providers you implicitly agree to their Terms and Conditions by using any of their services or assets.",
             "prefix": "Prefix",
             "short": "Gateway",
             "what_is": "What is a Gateway?"
@@ -1230,7 +1231,7 @@
                 "label": "Amount",
                 "tooltip": "Amount tooltip"
             },
-            "ees_bridge_is_unavailable": "Agent services are unavailable. Please try again later.",
+            "ees_bridge_is_unavailable": "Cryptos & fiat bridge is unavailable. Please try again later.",
             "secret": {
                 "label": "Secret",
                 "tooltip": "Your Secret is a random string. You must definitely jot down and save the Secret in order to redeem your Deposit later. You can use the copy button in this row to save the Secret.",
@@ -1387,7 +1388,7 @@
         "block": "Block",
         "brainkey": "Backup brainkey recommended",
         "connected": "Connected",
-        "connection": "No AcloudBank connection",
+        "connection": "No Blockchain connection",
         "disconnected": "Disconnected",
         "latency": "Latency",
         "loading": "Loading...",
@@ -1405,7 +1406,7 @@
             "check_unlock_account": "Unlock your account"
         },
         "address": {
-            "label": "CloudBank Account",
+            "label": "ETH Address",
             "tooltip": "Enter your Ethereum Bank address."
         },
         "hash_lock_generator": {
@@ -1431,7 +1432,7 @@
         "asset_to_withdraw": "Asset to withdraw:",
         "asset_unavailable": "The gateway for %(asset)s is not in service",
         "assets": {
-            "bit": "bit%(asset)s is a derivative that tracks the real value of %(backed)s. It is 100%% decentralized, trustless and backed by collateral held by the AcloudBank in a smart contract.",
+            "bit": "bit%(asset)s is a derivative that tracks the real value of %(backed)s. It is 100%% decentralized, trustless and backed by collateral held by the blockchain in a smart contract.",
             "bitcny": "bitCNY can be deposited or withdrawn 1:1 to real Yuan using a gateway service such as Magic bank. For more info, see https://www.magicw.net/",
             "bridge": "The %(asset)s asset is backed 1:1 by real %(backed)s and can be deposited or withdrawn using the gateway service provided by CryptoBridge.",
             "gdex": "The %(asset)s asset is backed 1:1 by real %(backed)s and can be deposited or withdrawn using the gateway service provided by GDEX.",
@@ -1451,7 +1452,7 @@
             "support_block": "For DEPOSIT AND WITHDRAWAL issues using \"BitSpark TRANSFER SERVICE\", please contact BitSpark at:"
         },
         "bridge": "Bridge",
-        "bridge_text": "A bridge lets you exchange an asset into another one, for example BTC to KES.",
+        "bridge_text": "A bridge lets you exchange an asset into another one, for example BTC to ACB.",
         "calc": "Calculating",
         "choose_deposit": "Please select the coin you would like to deposit",
         "choose_withdraw": "Please select the coin you would like to withdraw",
@@ -1515,7 +1516,7 @@
             "open_website": "Open Website"
         },
         "min_deposit_warning_amount": "Minimum Deposit: %(minDeposit)s %(coin)s",
-        "min_deposit_warning_asset": "IMPORTANT: Send only %(coin)s to this deposit address on the AcloudBank native to %(coin)s. Sending less than %(minDeposit)s %(coin)s or any other currency to this address may result in the loss of your deposit.",
+        "min_deposit_warning_asset": "IMPORTANT: Send only %(coin)s to this deposit address on the blockchain native to %(coin)s. Sending less than %(minDeposit)s %(coin)s or any other currency to this address may result in the loss of your deposit.",
         "over_limit": "Limit Reached",
         "phase_out_warning": "",
         "please_generate_address": "Please, get new address ",
@@ -1532,10 +1533,10 @@
             "min_amount": "Minimum amount: %(minamount)s %(symbol)s",
             "min_amount_warn": "Any deposits less than the minimum amount, or sent using a third-party smart contract (so-called Internal Txns) will not be credited.",
             "min_amount_error": "Please enter number >= minimum",
-            "support_block": "For support, please contact KES Bank at:",
+            "support_block": "For support, please contact ACB Database at:",
             "under_construction": "Temporarily unavailable. On maintenance",
-            "rudex_notice1": "Please see the Service Agreement of KES Bank for usage of their gateways",
-            "rudex_notice1_informed": "I have read and agree with KES Bank Service Agreement",
+            "rudex_notice1": "Please see the Service Agreement of ACB Database for usage of their gateways",
+            "rudex_notice1_informed": "I have read and agree with ACB Database Service Agreement",
             "rudex_notice_third_party": "Please see Terms of third party service",
             "rudex_notice1_informed_third_party_service": "I have read and agree with third party service terms",
             "buy_crypto": {
@@ -1544,7 +1545,7 @@
                 "choose_deposit": "Please, select the currency",
                 "choose_withdraw": "Please, select a cryptocurrency to sell",
                 "deposit_summary": "Additional Information",
-                "title2": "You can purchase crypto (BTC, ETH, USDT) to your KES Bank account using debit or credit card (Visa/MasterCard)* or Bank wire (SEPA)",
+                "title2": "You can purchase crypto (BTC, ETH, USDT) to your ACB Database account using debit or credit card (Visa/MasterCard)* or Bank wire (SEPA)",
                 "partner": "*service provided by our partner Raido Finance",
                 "buy": "Buy",
                 "buy_inst": "Instructions",
@@ -1599,7 +1600,7 @@
             "coming_soon": "Coming soon",
             "min_amount": "Minimum amount: %(minAmount)s %(symbol)s",
             "min_amount_error": "Please enter number >= minimum",
-            "support_block": "For support, please contact KES at:",
+            "support_block": "For support, please contact ACB at:",
             "under_construction": "Under Construction"
         },
         "ioxbank": {
@@ -1644,8 +1645,8 @@
         "deposit-withdraw": "Finance",
         "deposit_legacy": "or Legacy Deposit",
         "deposit": "Deposit",
-        "exchange": "Market",
-        "p2p_lending": "Exchange",
+        "exchange": "Exchange",
+        "p2p_lending": "Loan",
         "explorer": "Explore",
         "help": "Help",
         "insight": "Insight",
@@ -1663,7 +1664,7 @@
         "privacy_policy": "Privacy Policy",
         "title": "%(wallet_name)s UI",
         "unlock": "Local Bank Login",
-        "unlock_password": "KES Bank Login",
+        "unlock_password": "AcloudBank DB Login",
         "unlock_short": "Login",
         "unlocked_tip": "<br/>Click to log out.<br/><br/>Closing the browser window will also log you out.",
         "update_asset": "Update Asset",
@@ -1896,7 +1897,7 @@
             "confirm": "CONFIRM",
             "create_committee": "Become a committee member",
             "from": "From",
-            "text": "After being voted in as active committee you can help set policies and parameters for the KES Bank AcloudBank including: <ul><li>Transaction fees</li><li>Blockchain parameters (e.g. block size & interval)</li><li>Other governance matters</li></ul> Submit a link to your website or forum post explaining why you would be an exemplary member to attract enough votes to become active. Committee members should have basic technical understanding of KES Bank and bring knowledge and expertise in key aspects of governing an autonomous and self-sustaining blockchain. This is an unpaid position.",
+            "text": "After being voted in as active committee you can help set policies and parameters for the ACB Database including: <ul><li>Transaction fees</li><li>Blockchain parameters (e.g. block size & interval)</li><li>Other governance matters</li></ul> Submit a link to your website or forum post explaining why you would be an exemplary member to attract enough votes to become active. Committee members should have basic technical understanding of ACB Database and bring knowledge and expertise in key aspects of governing an autonomous and self-sustaining blockchain. This is an unpaid position.",
             "url": "URL",
             "web_example": "Enter link to your committee proposal post"
         },
@@ -1922,7 +1923,7 @@
             "address_generation_error": "Unable to generate address",
             "amount": "Amount to Deposit",
             "asset": "Asset",
-            "bts_transfer_description": "It's easy to receive KES from anywhere. As long as KES is sent to your account name it will show up in your bank. This QR code also contains your account name.",
+            "bts_transfer_description": "It's easy to receive ACB from anywhere. As long as ACB is sent to your account name it will show up in your bank. This QR code also contains your account name.",
             "cancel": "Cancel",
             "close": "Close",
             "header": "Deposit to %(account_name)s",
@@ -1965,7 +1966,7 @@
             "copyLog": "Copy Log",
             "copyScreenshot": "Right click in Image Preview -> Copy",
             "copySuccess": "Copy ended",
-            "explanatory_text_1": "This report collects the last entries of the error log and takes a screenshot of the current view, without the dialog opened. Click on entry to see the details.",
+            "explanatory_text_1": "This report collects the last entries of the error log and taACB a screenshot of the current view, without the dialog opened. Click on entry to see the details.",
             "explanatory_text_2": "Please report the issue you have found to GitHub:",
             "explanatory_text_3": "You can copy and paste (CTRL+C & CTRL+V) the screenshot and the log entries directly into the issue content text area. This works also for Telegram chat.",
             "explanatory_text_4": "If your issue affects user security you might be eligible for a bounty. In that case do not report it publicly, but rather through:",
@@ -1974,7 +1975,7 @@
             "lastLogEntries": "Last 20 log entries",
             "screenshot": "Screenshot",
             "showLog": "Show Log",
-            "takeScreenshot": "Show screenshot",
+            "taACBcreenshot": "Show screenshot",
             "title": "Error report"
         },
         "reserve": {
@@ -2018,10 +2019,12 @@
         "witness": {
             "confirm": "CONFIRM",
             "create_witness": "Become a witness member",
+               "update_witness": "Update witness member",
+            "update_confirm": "UPDATE",
             "enter_public_signing_key": "Enter your public signing key",
             "invalid_key": "Public Key is invalid",
             "public_signing_key": "Public Signing Key",
-            "text": "After being voted in as an active witness you are added in the rotation of block producers and expected to produce blocks signed by your signing key and you are rewarded in KES per produced block. Common criteria that help make your case are <ul><li>implementation of fallbacks (e.g. running a hot swap backup server) and appropriate server specifications to ensure a low number of missed blocks (e.g. high connectivity)</li><li>participation in block production and rolling releases of the testnet</li><li>provision of a public node for the community</li></ul> Submit a link to your website or forum post explaining why you would be a exemplary member to attract enough votes to become active.",
+            "text": "After being voted in as an active witness you are added in the rotation of block producers and expected to produce blocks signed by your signing key and you are rewarded in ACB per produced block. Common criteria that help make your case are <ul><li>implementation of fallbacks (e.g. running a hot swap backup server) and appropriate server specifications to ensure a low number of missed blocks (e.g. high connectivity)</li><li>participation in block production and rolling releases of the testnet</li><li>provision of a public node for the community</li></ul> Submit a link to your website or forum post explaining why you would be a exemplary member to attract enough votes to become active.",
             "url": "URL",
             "web_example": "Enter link to your witness proposal post",
             "witness_account": "Witness Account"
@@ -2081,11 +2084,11 @@
         "call_order_update": "{account} changed {debtSymbol} debt by {debt} and collateral by {collateral}",
         "committee_member_update_global_parameters": "{account} updated the global committee parameters",
         "credit_deal_expired": "{account} credit deal has expired.",
-        "credit_deal_repay": "{account} repays {amount} to Exchange，fee: {fee}.",
-        "credit_offer_accept": "{account} exchanges {amount} from Exchange.",
-        "credit_offer_create": "{account} create a Exchange of {amount}，fee rate: {fee}.",
-        "credit_offer_delete": "{account} deleted Exchange #{id}.",
-        "credit_offer_update": "{account} update a Exchange #{id}.",
+        "credit_deal_repay": "{account} repays {amount} to p2p Loan，fee: {fee}.",
+        "credit_offer_accept": "{account} borrows {amount} from p2p Loan.",
+        "credit_offer_create": "{account} create a p2p Loan of {amount}，fee rate: {fee}.",
+        "credit_offer_delete": "{account} deleted p2p Loan #{id}.",
+        "credit_offer_update": "{account} update a p2p Loan #{id}.",
         "fill_order_buy": "{account} bought {amount} at {price} for order #%(order)s",
         "fill_order_sell": "{account} sold {amount} at {price} for order #%(order)s",
         "htlc_create": "{from} locked {amount} for {to} to redeem until {lock_period}",
@@ -2148,8 +2151,8 @@
         "asset_not_found_subtitle": "That asset does not exist",
         "home": "Home",
         "market_not_found_subtitle": "Token Access Facility coming soon.",
-        "page_not_found_subtitle": "This page does not exist",
-        "page_not_found_title": "404 page not found"
+        "page_not_found_subtitle": "This page does not exist. or you should login first..",
+        "page_not_found_title": "404 page not found. Login to your account?"
     },
     "pagination": {
         "newer": "Newer",
@@ -2166,7 +2169,7 @@
             "delete_pool": "Delete",
             "exchange": "Exchange",
             "min_to_receive": "Min to receive",
-            "need_stake_first": "Need SAVE The Pool First!",
+            "need_stake_first": "Need Stake The Pool First!",
             "pool_id": "Pool Id",
             "share_asset": "Share Asset",
             "stake": "Stake",
@@ -2259,8 +2262,8 @@
             "create_prediction_market_asset": "A prediction market is a special kind of SmartCoin. This lets you create such a prediction market asset with inputs tailored for this purpose.",
             "hide_invalid_asset": "Per default the table below only shows prediction market assets that meet common standards required for a consistent user experience (prediction and resolution date are given, and reasonable market fee). Uncheck this to show all assets that exist on the blockchain, and make sure you know what you are doing.",
             "hide_unknown_houses": "Per default the table below only shows prediction market assets of known asset owners that meet requirements to increase their trustworthiness. As a participant, you need trust in the asset owner such that the asset will be resolved according to the real world outcome. Uncheck this to show all asset owners that exist on the blockchain, and make sure you know what you are doing. If you are the owner of a prediction market asset and want to be included in the default list, please contact the BitShares community.",
-            "oppose_is_incorrect": "You are opposing someone that thinks the prediction is incorrect. That means, you think the prediction will prove true. On the AcloudBank that reflects as buying and hodling the prediction market asset.",
-            "oppose_proves_true": "You are opposing someone that thinks the prediction proves true. That means, you think the prediction will be incorrect. On the AcloudBank that reflects as borrowing and selling the prediction market asset.",
+            "oppose_is_incorrect": "You are opposing someone that thinks the prediction is incorrect. That means, you think the prediction will prove true. On the blockchain that reflects as buying and hodling the prediction market asset.",
+            "oppose_proves_true": "You are opposing someone that thinks the prediction proves true. That means, you think the prediction will be incorrect. On the blockchain that reflects as borrowing and selling the prediction market asset.",
             "what_is_a_prediction_market_asset": "A prediction market asset is a special kind of asset that allows you to agree or disagree with the prediction statement of the asset and put collateral behind your opinion. It can be created by any user, and if you are participating you need to trust the asset owner to properly reflects the real world outcome on the blockchain.",
             "what_is_a_prediction_offer": "A prediction offer reflects limit orders on the market of the prediction market asset and its collateral. Agreement with the prediction (Prediction proves true) means that you want to buy the prediction market asset, disagreement (Prediction is incorrect) means that you borrow the prediction market asset and sell it"
         }
@@ -2389,7 +2392,7 @@
         "backup_favoritesbtn": "Backup favorites",
         "backup_favoritestext": "Back up your favorites to restore them later after updates.",
         "backup_key": "Import a private key",
-        "backup_legacy": "Import a KES 0.9.3c key export file (.json)",
+        "backup_legacy": "Import a ACB 0.9.3c key export file (.json)",
         "backup_text": "Create backups here.",
         "backupcreate_backup": "Create local Bank backup",
         "backupcreate_brainkey": "Create brainkey backup",
@@ -2403,7 +2406,7 @@
         "change_default": "Change default",
         "change_default_fee_asset": "Change default fee asset",
         "change_default_fee_asset_tooltip": "Change the default asset that is used to pay the transaction fee",
-        "cloud_login": "KES Bank Login",
+        "cloud_login": "AcloudBank DB Login",
         "confirmMarketOrder": "Ask for confirmation of market orders",
         "confirm_no": "Never",
         "confirm_remove": "Are you sure you want to remove %(name)s from your available nodes?",
@@ -2430,7 +2433,7 @@
         "lightTheme": "Light",
         "local_wallet": "Local Bank Login",
         "locale": "Switch language",
-        "lookup_text": "Click the button below to check for unclaimed balances from KES 1.0",
+        "lookup_text": "Click the button below to check for unclaimed balances from ACB 1.0",
         "low_latency": "Low latency",
         "medium_latency": "Medium latency",
         "midnightTheme": "Midnight",
@@ -2530,7 +2533,7 @@
         "borrow": {
             "borrow_tooltip": "You can also find this feature in your Portfolio under the tab Margin Positions, or by clicking  Borrow in the Exchange",
             "choose": "Choose the SmartCoin you want to create a position for",
-            "description": "Borrow a BitAsset from the KES Bank AcloudBank by locking up collateral (e.g. bitUSD, bitCNY, etc.)",
+            "description": "Borrow a BitAsset from the ACB Database by locking up collateral (e.g. bitUSD, bitCNY, etc.)",
             "do_it": "Let's do it",
             "get_started": "Get started",
             "navigate_with_keys": "The mechanism of the SmartCoin generation will be explained in the following steps. You can also use arrow keys to navigate",
@@ -2539,13 +2542,13 @@
             "previous": "Previous",
             "steps_benefits": {
                 "text": "Creating a Collateralized Debt Position allows you to provide liquidity for your desired SmartCoin (MPA), without giving up ownership of your collateral provided that you lock up enough collateral to guarantee the value of the SmartCoin. On the one hand, selling the newly generated SmartCoin on the open market will create leverage on your position (i.e. you sell it short, and will need to buy it back to close the position). On the other hand, holders of the SmartCoin benefit from the significantly less volatile SmartCoin, and they can additionally request a force settlement to obtain the corresponding value in its collateral without the need of markets.",
-                "text_legend": "Forced settlement: Holders of a SmartCoin can request a forced settlement. The SmartCoin is used to forcefully pay back the debt of the least collateralized positions while the former SmartCoin holder receives collateral as if he sold it for the forced settlement price. Any leftover collateral is returned to the position holder. This mechanism enforces a mandated delay after being triggered to avoid abuse (24 hours). \nForced Settlement Price: The price at which a forced settlement price will occur. It is calculated from the feed price by adding a forced settlement offset to disincentivize forced settlements. All settlements are converted to underlying backing asset (e.g. KES in the case of bitUSD).",
+                "text_legend": "Forced settlement: Holders of a SmartCoin can request a forced settlement. The SmartCoin is used to forcefully pay back the debt of the least collateralized positions while the former SmartCoin holder receives collateral as if he sold it for the forced settlement price. Any leftover collateral is returned to the position holder. This mechanism enforces a mandated delay after being triggered to avoid abuse (24 hours). \nForced Settlement Price: The price at which a forced settlement price will occur. It is calculated from the feed price by adding a forced settlement offset to disincentivize forced settlements. All settlements are converted to underlying backing asset (e.g. ACB in the case of bitUSD).",
                 "title": "Benefits",
                 "title_within": "What are the benefits?"
             },
             "steps_concept": {
-                "text": "A Collateralized Debt Position enables every user of the KES Bank AcloudBank to generate SmartCoins (MPA) by providing collateral. The collateral is locked up until you pay back the SmartCoins you have generated. You are effectively borrowing the SmartCoin from the KES Bank Blockchain.",
-                "text_legend": "Example bitUSD: Provide KES as collateral to borrow bitUSD",
+                "text": "A Collateralized Debt Position enables every user of the ACB Database to generate SmartCoins (MPA) by providing collateral. The collateral is locked up until you pay back the SmartCoins you have generated. You are effectively borrowing the SmartCoin from the ACB Database.",
+                "text_legend": "Example bitUSD: Provide ACB as collateral to borrow bitUSD",
                 "title": "Concept",
                 "title_within": "What is a Collateralized Debt Position?"
             },
@@ -2555,7 +2558,7 @@
                 "title_within": ""
             },
             "steps_introduction": {
-                "text": "Use this native dApp from the KES Bank AcloudBank to manage depositing collateral and the generation of SmartCoins.",
+                "text": "Use this native dApp from the ACB Database to manage depositing collateral and the generation of SmartCoins.",
                 "title_within": "This is the place to generate SmartCoins (Market Pegged Assets, MPAs)"
             },
             "steps_risks": {
@@ -2592,7 +2595,7 @@
             "payer_balance_not_sufficient": "There are not enough funds in the payer's account to claim the full limit amount of {limit}. The limit has been adjusted to reflect the currently available balance!",
             "period": "Specify period",
             "start_date": "First period starts on",
-            "title": "Recurring bills",
+            "title": "Direct debit",
             "tooltip": {
                 "authorized_account": "The account that is eligible to collect from your account.",
                 "limit_per_period": "The payee may collect a maximum amount of the specified asset (up to) per period. The payee can only collect once per period, even if not collected in full.",
@@ -2608,7 +2611,7 @@
             "amount": "Amount",
             "create_htlc": "Create HTLC",
             "custom": "Custom",
-            "description": "A Hash-Timed-Lock (HTLC), a.k.a cryptographic escrow, securely locks away funds for given recipient, who can redeem those funds by providing a secret password from the sender via mail or whatsapp",
+            "description": "A HTLC locks away funds for given recipient, who can redeem those funds by providing a secret (password) that was used by the sender to create the contract. Disclosing the password happens off-chain.",
             "enter_secret_preimage": "Enter secret",
             "expiration": "Expiration",
             "expiration_date": "Expiration date",
@@ -2633,7 +2636,7 @@
             "second_stage": "2nd stage",
             "sender": "Sender",
             "size": "Size",
-            "title": "Timed payment",
+            "title": "Hashed Time-Lock Contracts",
             "title_short": "HTLC",
             "to": "To",
             "tooltip": {
@@ -2652,7 +2655,7 @@
         },
         "merchant_protocol": {
             "description": "Create, view and pay remittance requests or invoices",
-            "title": "Invoice payment"
+            "title": "Merchant Protocol"
         },
         "paper_wallet": {
             "description": "Create a PDF with your account's keys printed (plain text and barcode). If the Bank is unlocked, the private keys are added as well.",
@@ -2708,7 +2711,7 @@
             "title": "Timed transfer"
         },
         "voting": {
-            "description": "Vote on block producers, committee members and worker proposals to influence strategic decisions and advancement of the KES Bank Blockchain.",
+            "description": "Vote on block producers, committee members and worker proposals to influence strategic decisions and advancement of the ACB Database.",
             "title": "Voting"
         }
     },
@@ -2748,7 +2751,7 @@
         "filter_ops": "Use this list to filter your history by operation type.",
         "follow_user": "You are following this user",
         "follow_user_add": "Click to Follow this user",
-        "gateway": "Gateways provide IOUs on the KES Bank AcloudBank that are backed by the real asset",
+        "gateway": "Gateways provide IOUs on the ACB Database that are backed by the real asset",
         "generate": "The generated password was created by your browser, locally. <br /><br /><strong>No one but you has access to it</strong>.<br /><br /> Paste it below and save a copy in a safe place",
         "global_settle": "This asset is globally settled. Settling it will let you convert your holdings of %(asset)s to %(backingAsset)s instantly, at the global settlement price (visible in exchange header or asset details page).",
         "global_settle_price": "This is the price at which settle orders will execute. This asset is globally settled, thus settlement orders will execute instantly",
@@ -2768,7 +2771,7 @@
                 "brainkey": "Brainkey",
                 "end": " to login.",
                 "middle": " or use ",
-                "model": "KES bank"
+                "model": "AcloudBank DB"
             }
         },
         "login-tooltips": {
@@ -2782,7 +2785,7 @@
                 "brainkey": "Brainkey",
                 "end": " to login.",
                 "middle": " or use ",
-                "model": "KES bank"
+                "model": "AcloudBank DB"
             }
         },
         "login_required": "Please login to the selected account to perform this action",
@@ -2802,7 +2805,7 @@
         "proxy_remove": "You have a proxy set, to remove it clear this input field and click save or directly click remove proxy",
         "proxy_search": "Search for an account to be used as your proxy for voting. Your account will act as if you would be voting exactly the same as your proxy.",
         "registration": {
-            "accountModel": "The KES Bank lets you login to your Bank from anywhere using only your account name and password, but your password is vulnerable to brute-force attacks which means it is important to use a very long password, ideally 20+ characters!",
+            "accountModel": "The ACB Database lets you login to your Bank from anywhere using only your account name and password, but your password is vulnerable to brute-force attacks which means it is important to use a very long password, ideally 20+ characters!",
             "accountName": "Account name must contain from 4 to 63 characters and must consist of latin letters, dashes, digits.",
             "password": "Password must contain at least 8 characters. It would be better to use a complicated password containing a combination of numbers, special characters and letters.",
             "walletModel": "The local Bank has the best security, but is restricted to your current browser and computer. To migrate the Bank to another browser or computer, you may use the backup file or brainkey.",
@@ -2819,7 +2822,7 @@
         "sign_owner": "If you are the owner of this account, please check this to make sure the transaction gets signed properly. This is only necessary if you are using the owner account and that account is not included in the active permissions.",
         "sync_no": "The current node is out of sync with the blockchain, try switching to another one",
         "sync_yes": "The current node is in sync with the blockchain",
-        "target_collateral_ratio": "Setting a Target Collateral Ratio (TCR) will allow the AcloudBank to automatically sell the required amount of your collateral in order to keep your collateral ratio at or above your defined TCR when the value of your collateral decreases. To frequently sell small amounts, set a low target (eg. < 2). To sell larger amounts infrequently, set a high target (eg. > 3)",
+        "target_collateral_ratio": "Setting a Target Collateral Ratio (TCR) will allow the blockchain to automatically sell the required amount of your collateral in order to keep your collateral ratio at or above your defined TCR when the value of your collateral decreases. To frequently sell small amounts, set a low target (eg. < 2). To sell larger amounts infrequently, set a high target (eg. > 3)",
         "transfer_actions": "Click here to make a transfer, or to deposit/withdraw those assets that support it.",
         "unlock_account_name": "Click to edit the account name, e.g. when your account is set as permission of another account.",
         "update_position": "Click here to update your position. You may at any time change the debt and/or collateral levels of your position.",
@@ -2947,12 +2950,12 @@
             "committee_member_create": "Create committee member",
             "committee_member_update": "Update committee member",
             "committee_member_update_global_parameters": "Global parameters update",
-            "credit_deal_expired": "Exchange expired",
+            "credit_deal_expired": "Credit deal expired",
             "credit_deal_repay": "Repay credit deal",
-            "credit_offer_accept": "Accept exchange",
-            "credit_offer_create": "Create exchange",
-            "credit_offer_delete": "Delete exchange",
-            "credit_offer_update": "Update Exchange",
+            "credit_offer_accept": "Accept p2p Loan",
+            "credit_offer_create": "Create p2p Loan",
+            "credit_offer_delete": "Delete p2p Loan",
+            "credit_offer_update": "Update p2p Loan",
             "samet_fund_create": "Create flash loan",
             "samet_fund_update": "Update flash loan",
             "samet_fund_delete": "Delete flash loan",
@@ -2974,7 +2977,7 @@
             "liquidity_pool_create": "Create exchange pool",
             "liquidity_pool_delete": "Delete exchange pool",
             "liquidity_pool_deposit": "Add exchange",
-            "liquidity_pool_exchange": "Liquidity exchange",
+            "liquidity_pool_exchange": "Exchange exchange",
             "liquidity_pool_withdraw": "Remove exchange",
             "override_transfer": "Override transfer",
             "proposal_create": "Create proposal",
@@ -3136,9 +3139,9 @@
     },
     "voting": {
         "create_ticket": "Lock 1 {asset}",
-        "description": "The Cloud Bank AcloudBank allows the holders of its core token KES to vote for the proposed changes recommended by the committee and/or transaction witnesses of CloudBank ecosystem.",
+        "description": "The ACB Database allows the holders of its core Assets ACB to vote on block producers (witnesses), committee members (blockchain governance), worker proposals (reimbursement for tasks and strategic decisions through BSIPs/Polls).",
         "increase_voting_power": "Create Lock",
-        "ticket_explanation": "To be able to vote a user has to LOCK away some KES tokens",
+        "ticket_explanation": "Obtain voting power by locking away the core Assets ACB.",
         "title": "Voting"
     },
     "walkthrough": {
@@ -3148,7 +3151,7 @@
         "chart_tool_indicators": "Add technical indicators to the price chart to identify trading opportunities.",
         "chart_tool_zoom": "Adjust the price chart to show more or less price history.",
         "collapsed_items": "View one or several sections of the market by expanding the drawers",
-        "create_cloud_wallet": "Access the KES Bank using an account name and password.",
+        "create_cloud_wallet": "Access the ACB Database using an account name and password.",
         "create_local_wallet": "Create a local Bank and download any private keys belonging to it.",
         "depth_chart": "Use a market depth chart to show the supply and demand at different prices.",
         "done_label": "Done",
@@ -3172,7 +3175,7 @@
     },
     "wallet": {
         "accept": "Accept",
-        "account_public": "Account Name (e.g. dan-waltz)",
+        "account_public": "Account e.g. dennis-satia",
         "active_wallet": "Active Local bank",
         "all_set": "You're all set!",
         "ask_to_select_wallet": "Please select a key file",
@@ -3180,7 +3183,7 @@
         "backup_brainkey": "Backup Brainkey",
         "backup_explain": "Clicking on the button below will generate a .bin-file. This file is encrypted with your Bank password, and contains all the private keys for your accounts. It can be used to restore your bank, or move it to a different computer/browser.",
         "backup_login": "Backup & login",
-        "backup_new_account": "Congratulations, you've just created a new account on the %(wallet_name)s exchange powered by the KES Bank blockchain! It is strongly recommended that you make a backup of your Bank now. Without a backup there is no way to restore your account if something happens to your computer.",
+        "backup_new_account": "Congratulations, you've just created a new account on the %(wallet_name)s exchange powered by the ACB Database! It is strongly recommended that you make a backup of your Bank now. Without a backup there is no way to restore your account if something happens to your computer.",
         "backup_types": "backup types",
         "backup_warning": "It appears that your private key files are not backed up. For security reasons we recommend users do not log in without backing up their private keys.",
         "balance_claim_lookup": "Lookup balances",
@@ -3197,7 +3200,7 @@
         "brainkey_w1": "To complete your backup, print this out, or write it down.",
         "brainkey_w2": "Anyone with access to your recovery key will",
         "brainkey_w3": "have access to funds within this local bank.",
-        "bts_09_export": "KES 0.9.3c key export file (.json)",
+        "bts_09_export": "CLOUD 0.9.3c key export file (.json)",
         "cancel": "Cancel",
         "change": "Change to %(name)s",
         "change_backup": "Now that you've changed your password, we highly recommend making a new backup.",
@@ -3213,9 +3216,9 @@
         "congrat": "Congratulations, you're ready!",
         "console": "Local Bank Management Console",
         "create": "Create",
-        "create_a": "Create a new AcloudBank account",
+        "create_a": "Create a new blockchain account",
         "create_account_password_text": "The keys for this new account will be derived using your password. <strong>Nothing is stored in the browser or in a central server, so you will need to ensure you remember this password!!</strong> Store it using a password manager or by writing it down manually.",
-        "create_account_text_when_you_create_your_first_rsquared_account": "When you create your first KES Bank account, a Local Bank will be automatically created as well and stored in your browser. This local Bank is encrypted with your password, and will contain any private keys belonging to your account.",
+        "create_account_text_when_you_create_your_first_rsquared_account": "When you create your first ACB Database account, a Local Bank will be automatically created as well and stored in your browser. This local Bank is encrypted with your password, and will contain any private keys belonging to your account.",
         "create_account_text_you_should_take_the_time_to_back_up_your_account": "<b>You should take the time to back up your account.</b>",
         "create_account_text_there_are_a_few_ways_to_do_this": "There are a few ways to do this:",
         "create_account_text_1_you_can_create_a_backup_file": "1.  \tYou can create a backup file and download it to your device. This file can be used along with your password to get back into your account if you clear your browser (or want to access your account in another browser). This is a good backup measure, but you’ll need to jot down and save your password – without this password, the file alone won’t work.",
@@ -3228,7 +3231,7 @@
         "create_importkeys_text": "In order to import keys, you first need to create a local Bank to contain the keys. Complete the dialog below to create a new local bank.",
         "create_password": "Create a new account using a password",
         "create_success": "Your local Bank has been created",
-        "create_text": "The %(wallet_name)s local Bank is stored in your browser, it is not stored in the KES. A Bank can contain multiple accounts and can be easily transferred between browsers and computers using a backup file.",
+        "create_text": "The %(wallet_name)s local Bank is stored in your browser, it is not stored in the ACB. A Bank can contain multiple accounts and can be easily transferred between browsers and computers using a backup file.",
         "create_w_a": "Create a local Bank containing an account",
         "create_wallet": "Create new local bank",
         "create_wallet_backup": "Create new Bank from backup",
@@ -3249,17 +3252,17 @@
         "existing_password": "Existing Password",
         "first_account_paid": "Since this is your first account, a faucet will pay the registration fee for you.",
         "first_account_paid_testnet": "A faucet will pay the registration fee for you in the Testnet. You will also be credited with a few coins to start with.",
-        "acquiring_holding_trading": "<b>ACQUIRING, HOLDING, TRADING, TRANSFERRING OR OTHERWISE ENGAGING WITH TOKENS AND ANY SURROUNDING AND SUPPORTING SYSTEMS CAN CARRY SIGNIFICANT RISKS OF LOSS.</b>",
+        "acquiring_holding_trading": "<b>TRANSFERRING, ACQUIRING, HOLDING, TRADING, OR OTHERWISE ENGAGING WITH FUNDS (TOKENS,NFTs,MONEY) CAN CARRY SIGNIFICANT RISKS OF LOSS.  GOOD LUCK ! </b>",
         "generated": "Generated password",
         "go_get_started": "Getting Started",
         "has_wallet": "When you create your first %(wallet_name)s account, a %(wallet_name)s local Bank will be automatically created as well and stored in your browser. This local Bank is encrypted with your password, and will contain any private keys belonging to your accounts. It is important that you take the time to backup this Bank once created!",
-        "import_20_notice1": "Import your KES 2.0+ BACKUP first",
+        "import_20_notice1": "Import your ACB 2.0+ BACKUP first",
         "import_20_notice2": "(if you have one)",
         "import_backup": "Import %(wallet_name)s 2.0 backup (.bin-file)",
         "import_backup_choose": "Please select your backup file in the dialog below. This is completely safe as the file is not uploaded anywhere and never leaves your browser.",
         "import_balance": "Import balance(s)",
         "import_bts": "Import a beta key export",
-        "import_bts1": "Import from KES Bank beta",
+        "import_bts1": "Import from ACB Database beta",
         "import_key_success": "Successfully imported %(count)s keys.",
         "import_keys": "Import Keys",
         "import_keys_tool": "Key Import Tool",
@@ -3295,9 +3298,9 @@
         "password": "New Password",
         "password_crucial": "In case you haven't already done so, it is crucial that you take the time to write down your account name and password now, whether it be on paper, a password manager, or somewhere else. If you lose or forget your account name or this password your account will be lost, <strong>we cannot help you get it back</strong>.",
         "password_lose_warning": "<strong>IMPORTANT: If you forget your account name or pass phrase you will be unable to access your account, we cannot reset or restore your password! Make sure you memorize or write down your account name and password!</strong>",
-        "password_model": "KES bank",
-        "password_model_1": "The KES Bank uses a password in combination with your account name to generate your private keys on the fly. It restricts you to only logging in with one account at a time, in return for ease of use and convenience.",
-        "password_model_2": "The KES Bank lets you login to your Bank from anywhere using only your account name and password, but <strong> your password is vulnerable to brute-force attacks which means it is important to use a very long password, ideally 20+ characters!</strong>",
+        "password_model": "AcloudBank DB",
+        "password_model_1": "The ACB Database uses a password in combination with your account name to generate your private keys on the fly. It restricts you to only logging in with one account at a time, in return for ease of use and convenience.",
+        "password_model_2": "The ACB Database lets you login to your Bank from anywhere using only your account name and password, but <strong> your password is vulnerable to brute-force attacks which means it is important to use a very long password, ideally 20+ characters!</strong>",
         "password_model_3": "<li>Single account</li><li>Easy login</li><li>Moderate security</li>",
         "password_show": "Show me my password",
         "paste_private": "Paste private keys here (bank Import Format - WIF)",
@@ -3323,7 +3326,7 @@
         "step_2": "Create a backup",
         "step_3": "Getting Started",
         "submit": "Submit",
-        "switch_model_password": "Switch to KES bank",
+        "switch_model_password": "Switch to ACB Database",
         "switch_model_wallet": "Switch to local bank",
         "terms_of_use": "Terms of Use",
         "tips_account": "See your new account",
@@ -3343,7 +3346,7 @@
         "understand_2": "I have written down or otherwise stored my password",
         "understand_3": " I understand that I will lose access to my funds if I lose my password",
         "use_different": "Use different file",
-        "use_password": "Use a KES bank",
+        "use_password": "Use a ACB Database",
         "use_wallet": "Use a local bank",
         "using": "Using:",
         "verified": "Verified",
@@ -3365,35 +3368,6 @@
         "wif_associated_accounts": "Associated Account(s): ",
         "wif_import_error": "Please enter a valid WIF",
         "wif_length_error": "Incorrect input length"
-    }, "xbtsx": {
-        "account": {
-            "id": "Savings ID",
-            "title": "Save to earn interests ",
-            "staking_amount": "savings amount",
-            "remaining": "Remaining in savings period",
-            "staking_text1": "Everyone who save money is entitled to %(percent)s of the trading profits from the <b>Homepesa Sacco  ACCOUNT</b>. savings will lock your assets for the time you specify below. During the savings period you automatically take part in the payout distributions. Payouts happen bi-weekly.",
-            "staking_text2": "A longer savings duration results in a bigger payout factor. After the savings period has been reached, you can reclaim your saved assets balance with the <b>'Claim Now'</b> button. The AcloudBank fee to start a new savings position is currently set at <b>%(fee)s KES</b>. The AcloudBank fee to reclaim your saved assets is currently set at <b>%(reclaimFee)s KES.</b><br>Minimal SAVE Deposit 100 000 KES",
-            "staking_text3": "You can only SAVE that you have deposited into the <b>Homepesa Sacco  ACCOUNT</b>. You can find more information about the advantages of the <b>Homepesa Sacco  ACCOUNT</b> and its profit sharing at <a target=\"_new\" href=\"https://sacco.homepesa.com\">sacco.homepesa.com</a>. More details on how payouts happen and how bonuses are applied are also available on the <a target=\"_new\" href=\"https://sacco.homepesa.com\">SACCO page</a>. ",
-            "status": "Status",
-            "staking": "Homepesa Sacco",
-            "days": "%(days)s Days",
-            "available": "Available for claiming",
-            "month_1": "1 Month (%(bonus)s bonus)",
-            "month_3": "3 Month (%(bonus)s bonus)",
-            "month_6": "6 Month (%(bonus)s bonus)",
-            "month_12": "12 Month (%(bonus)s bonus)",
-            "mpone": "1 month",
-            "mpthree": "3 Months",
-            "mpsix": "6 Months",
-            "mptwelve": "12 Months",
-            "amount_sth": "Amount of asset to save",
-            "stake_sth": "Make savings",
-            "length": "savings duration",
-            "understand": "I hereby agree that by savings %(amount)s KES, I fully understand that they will be locked away for %(month)s and that there is no way of claiming the funds before the savings term is over. I also accept the share in the profits of ACB platform which is attributed to my saved funds.",
-            "no_balances": "You have no open savings positions.",
-            "sth_available": "Available: ",
-            "sth_not_available": "No ACB available "
-        }
     },
     "withdraw": {
         "create": "Create Withdraw",
@@ -3515,7 +3489,7 @@
         "submit_request": "Submit request",
         "add_coin": " Initialization",
         "donate": "Asset",
-        "donate_progress": "Fundraiser progress",
+        "donate_progress": "Crowdfunding progress",
         "listed": "Listed",
         "get_donate_tokens": "Get ",
         "token": " financing to support a project or charity",
@@ -3543,7 +3517,7 @@
             "text1": "Why start a fundraiser? Through crowdfunding, you can quickly and easily raise money for causes close to your heart, all while creating a community of like-minded supporters who are eager to help. Crowdfunding is right for you if you need to raise money fast, like in the case of a personal or financial emergency, or if you want to support a project or charity that needs funds on a deadline. ",
             "text2": "We ensure a Safe crowdfunding practices that keep donor protection in mind.",
             "text3": {
-                "t1": "Any KES Bank user can support the listing of their favorite assets via crowdfunding. ",
+                "t1": "Any ACB Database user can support the listing of their favorite assets via crowdfunding. ",
                 "t2": "To that end please ",
                 "get": "acquire "
             },
@@ -3556,10 +3530,10 @@
             "text5": {
                 "t1": "After the project reaches the set crowdfunding threshold all collected tokens are withdraw",
                 "t2": "and our teams initiates the listing procedure, that includes gateway creation and set up of the trading pairs for the asset.",
-                "t3": "Please note that the KES Bank team reserves the right to delist assets to protect our own interests and the interests of our customers."
+                "t3": "Please note that the ACB Database team reserves the right to delist assets to protect our own interests and the interests of our customers."
             },
             "terms": {
-                "t1": "If your token is included in the voting section for subsequent listing, then the target amount of DONATE tokens for its implementation will be formed according to the following rule:",
+                "t1": "If your Assets is included in the voting section for subsequent listing, then the target amount of DONATE tokens for its implementation will be formed according to the following rule:",
                 "t2": "The amount is determined by the position in the rating on CoinMarketCap – the higher the rating, the lower the required amount; you can see the target for each range in parentheses.",
                 "tu1": "1-100 (3000 USD)",
                 "tu2": "101-300 (4000 USD)",
@@ -3569,13 +3543,13 @@
                 "t3": "For BEP20 / ERC20 / TRC20 tokens the amount is also determined by the list above, however, for those below the top 300, the target amount will be 5000 DONATE."
             },
             "rules": {
-                "header": "Checklist to starts a fundraiser on the KES Bank:",
+                "header": "Checklist to starts a fundraiser on the ACB Database:",
                 "rule_1": "Please check ",
                 "rule_10": "rules",
                 "rule_11": " and submit a listing request.",
                 "rule_2": "Wait for the review results: if everything is in order, then it would be added to the project listing page.",
                 "rule_3": "Use your time to promote your project crowdfunding process via social networks, attract other users. Use",
-                "rule_4": " tokens to reach the crowdfunding goal (a KES Bank account is required for this).",
+                "rule_4": " tokens to reach the crowdfunding goal (a ACB Database account is required for this).",
                 "rule_5": "Listing process is initiated after the crowdfunding goal is reach, and begins with the gateway launch preparation. Please provide the contacts for technical/marketing team, or any other qualified contact."
             },
             "end": "Good luck with your project and welcome to "

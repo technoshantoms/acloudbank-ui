@@ -21,7 +21,6 @@ import CopyButton from "../Utility/CopyButton";
 import {withRouter} from "react-router-dom";
 import {scroller} from "react-scroll";
 import {Notification, Tooltip} from "bitshares-ui-style-guide";
-import {withGoogleReCaptcha} from "react-google-recaptcha-v3";
 
 class CreateAccountPassword extends React.Component {
     constructor() {
@@ -127,7 +126,7 @@ class CreateAccountPassword extends React.Component {
         WalletUnlockActions.checkLock.defer();
     }
 
-    createAccount(name, password, token) {
+    createAccount(name, password) {
         let refcode = this.refs.refcode ? this.refs.refcode.value() : null;
         let referralAccount = AccountStore.getState().referralAccount;
         this.setState({loading: true});
@@ -138,8 +137,7 @@ class CreateAccountPassword extends React.Component {
             this.state.registrar_account,
             referralAccount || this.state.registrar_account,
             0,
-            refcode,
-            token
+            refcode
         )
             .then(() => {
                 AccountActions.setPasswordAccount(name);
@@ -189,7 +187,7 @@ class CreateAccountPassword extends React.Component {
             });
     }
 
-    async onSubmit(e) {
+    onSubmit(e) {
         e.preventDefault();
         if (!this.isValid()) return;
         let account_name = this.accountNameInput.getValue();
@@ -197,13 +195,6 @@ class CreateAccountPassword extends React.Component {
         //     this.createAccount(account_name);
         // } else {
         let password = this.state.generatedPassword;
-        const {executeRecaptcha} = this.props.googleReCaptchaProps;
-
-        let token = null;
-        if (this._isFirstAccount()) {
-            token = await executeRecaptcha("CreateAccount");
-        }
-
         this.createAccount(account_name, password);
     }
 
@@ -666,7 +657,7 @@ class CreateAccountPassword extends React.Component {
                 </p>
 
                 <p className="txtlabel warning">
-                    <Translate unsafe content="wallet.tips_login" />
+                    <Translate content="wallet.tips_login" />
                 </p>
             </div>
         );
@@ -710,7 +701,7 @@ class CreateAccountPassword extends React.Component {
     }
 }
 
-CreateAccountPassword = withRouter(withGoogleReCaptcha(CreateAccountPassword));
+CreateAccountPassword = withRouter(CreateAccountPassword);
 
 export default connect(CreateAccountPassword, {
     listenTo() {

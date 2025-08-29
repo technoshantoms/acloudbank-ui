@@ -21,8 +21,8 @@ import SettingsActions from "actions/SettingsActions";
 import counterpart from "counterpart";
 import {withRouter} from "react-router-dom";
 import {scroller} from "react-scroll";
+import {getWalletName} from "branding";
 import {Notification} from "bitshares-ui-style-guide";
-import {withGoogleReCaptcha} from "react-google-recaptcha-v3";
 
 class CreateAccount extends React.Component {
     constructor() {
@@ -35,11 +35,12 @@ class CreateAccount extends React.Component {
             loading: false,
             hide_refcode: true,
             show_identicon: false,
-            step: 1,
-            userAgreement: false
+            step: 1
         };
         this.onFinishConfirm = this.onFinishConfirm.bind(this);
+
         this.accountNameInput = null;
+
         this.scrollToInput = this.scrollToInput.bind(this);
     }
 
@@ -68,9 +69,6 @@ class CreateAccount extends React.Component {
         if (!firstAccount) {
             valid = valid && this.state.registrar_account;
         }
-        if (!this.state.userAgreement) {
-            valid = false;
-        }
         return valid;
     }
 
@@ -84,10 +82,6 @@ class CreateAccount extends React.Component {
 
     onPasswordChange(e) {
         this.setState({validPassword: e.valid});
-    }
-
-    onUserAgreementChange(e) {
-        this.setState({userAgreement: e.target.checked});
     }
 
     onFinishConfirm(confirm_store_state) {
@@ -110,7 +104,7 @@ class CreateAccount extends React.Component {
     }
 
     scrollToInput() {
-        scroller.scrollTo("scrollToInput", {
+        scroller.scrollTo(`scrollToInput`, {
             duration: 1500,
             delay: 100,
             smooth: true,
@@ -118,7 +112,7 @@ class CreateAccount extends React.Component {
         });
     }
 
-    createAccount(name, token) {
+    createAccount(name) {
         let refcode = this.refs.refcode ? this.refs.refcode.value() : null;
         let referralAccount = AccountStore.getState().referralAccount;
         WalletUnlockActions.unlock()
@@ -130,8 +124,7 @@ class CreateAccount extends React.Component {
                     this.state.registrar_account,
                     referralAccount || this.state.registrar_account,
                     0,
-                    refcode,
-                    token
+                    refcode
                 )
                     .then(() => {
                         // User registering his own account
@@ -164,18 +157,12 @@ class CreateAccount extends React.Component {
                             "ERROR AccountActions.createAccount",
                             error
                         );
-                        let error_msg = "unknown error";
-
-                        if (
+                        let error_msg =
                             error.base &&
                             error.base.length &&
                             error.base.length > 0
-                        ) {
-                            error_msg = error.base[0];
-                        }
-                        if (error.response && error.response.status === 429) {
-                            error_msg = error.response.statusText;
-                        }
+                                ? error.base[0]
+                                : "unknown error";
                         if (error.remote_ip) error_msg = error.remote_ip[0];
                         Notification.error({
                             message: counterpart.translate(
@@ -215,29 +202,16 @@ class CreateAccount extends React.Component {
             });
     }
 
-    async onSubmit(e) {
+    onSubmit(e) {
         e.preventDefault();
         if (!this.isValid()) return;
-
-        const {executeRecaptcha} = this.props.googleReCaptchaProps;
-
-        if (!executeRecaptcha) {
-            console.log("Recaptcha has not been loaded");
-            return;
-        }
-
-        let token = null;
-        if (this._isFirstAccount()) {
-            token = await executeRecaptcha("CreateAccount");
-        }
-
         let account_name = this.accountNameInput.getValue();
         if (WalletDb.getWallet()) {
-            this.createAccount(account_name, token);
+            this.createAccount(account_name);
         } else {
             let password = this.refs.password.value();
             this.createWallet(password).then(() =>
-                this.createAccount(account_name, token)
+                this.createAccount(account_name)
             );
         }
     }
@@ -251,16 +225,11 @@ class CreateAccount extends React.Component {
     //     this.setState({hide_refcode: false});
     // }
 
-    _isFirstAccount() {
-        const my_accounts = AccountStore.getMyAccounts();
-        return my_accounts.length === 0;
-    }
-
     _renderAccountCreateForm() {
         let {registrar_account} = this.state;
 
         let my_accounts = AccountStore.getMyAccounts();
-        let firstAccount = this._isFirstAccount();
+        let firstAccount = my_accounts.length === 0;
         let hasWallet = WalletDb.getWallet();
         let valid = this.isValid();
         let isLTM = false;
@@ -342,6 +311,8 @@ class CreateAccount extends React.Component {
                     </div>
                 )}
 
+                <div className="divider" />
+
                 {/* Submit button */}
                 {this.state.loading ? (
                     <LoadingIndicator type="three-bounce" />
@@ -350,39 +321,6 @@ class CreateAccount extends React.Component {
                         <Translate content="account.create_account" />
                     </button>
                 )}
-
-                <div style={{paddingTop: "0.5rem"}}>
-                    <label style={{margin: "3px 0 0", width: "fit-content"}}>
-                        <input
-                            style={{
-                                position: "relative",
-                                top: 3,
-                                display: "block",
-                                float: "left"
-                            }}
-                            className="no-margin"
-                            type="checkbox"
-                            checked={this.state.userAgreement}
-                            onChange={this.onUserAgreementChange.bind(this)}
-                        />
-
-                        <p
-                            style={{
-                                paddingLeft: "0.4rem",
-                                fontSize: "1rem",
-                                textIndent: 3,
-                                lineHeight: 1.6,
-                                textTransform: "none"
-                            }}
-                        >
-                            <Translate
-                                unsafe
-                                content="wallet.create_account_you_agree_that_had_read"
-                            />
-                        </p>
-                    </label>
-                </div>
-                <div className="divider" />
 
                 {/* Backup restore option */}
                 <div style={{paddingTop: 40}}>
@@ -436,39 +374,26 @@ class CreateAccount extends React.Component {
                     <Translate content="wallet.wallet_browser" />
                 </h4>
 
-               
+                <p>
+                    {!hasWallet ? (
+                        <Translate
+                            content="wallet.has_wallet"
+                            wallet_name={getWalletName()}
+                        />
+                    ) : null}
+                </p>
+
                 <Translate
                     style={{textAlign: "left"}}
-                    unsafe
                     component="p"
-                    content="wallet.create_account_text_there_are_a_few_ways_to_do_this"
+                    content="wallet.create_account_text"
                 />
-                <Translate
-                    style={{textAlign: "left"}}
-                    unsafe
-                    component="p"
-                    content="wallet.create_account_text_1_you_can_create_a_backup_file"
-                />
-                <Translate
-                    style={{textAlign: "left"}}
-                    unsafe
-                    component="p"
-                    content="wallet.create_account_text_2_you_can_access_and_write_down_your_private_key"
-                />
-                <Translate
-                    style={{textAlign: "left", marginTop: "10px"}}
-                    unsafe
-                    component="p"
-                    content="wallet.create_account_text_3_you_can_create_a_brainkey"
-                />
-              
 
                 {firstAccount ? (
                     <Translate
                         style={{textAlign: "left"}}
-                        unsafe
                         component="p"
-                        content="wallet.acquiring_holding_trading"
+                        content="wallet.first_account_paid"
                     />
                 ) : (
                     <Translate
@@ -477,6 +402,13 @@ class CreateAccount extends React.Component {
                         content="wallet.not_first_account"
                     />
                 )}
+
+                {/* {this.state.hide_refcode ? null :
+                    <div>
+                        <RefcodeInput ref="refcode" label="refcode.refcode_optional" expandable={true}/>
+                        <br/>
+                    </div>
+                } */}
             </div>
         );
     }
@@ -601,8 +533,16 @@ class CreateAccount extends React.Component {
                     <Translate content="wallet.congrat" />
                 </p>
 
+                <p>
+                    <Translate content="wallet.tips_explore" />
+                </p>
+
+                <p>
+                    <Translate content="wallet.tips_header" />
+                </p>
+
                 <p className="txtlabel warning">
-                    <Translate unsafe content="wallet.tips_login" />
+                    <Translate content="wallet.tips_login" />
                 </p>
             </div>
         );
@@ -610,7 +550,6 @@ class CreateAccount extends React.Component {
 
     render() {
         let {step} = this.state;
-        console.log("render");
 
         return (
             <div
@@ -619,7 +558,7 @@ class CreateAccount extends React.Component {
                 name="scrollToInput"
             >
                 <div style={{maxWidth: "95vw"}}>
-                    {step === 2 ? (
+                    {step !== 1 ? (
                         <p
                             style={{
                                 fontWeight: "normal",
@@ -631,26 +570,23 @@ class CreateAccount extends React.Component {
                         </p>
                     ) : null}
 
-                    {step === 1 ? (
-                        <>
-                            {this._renderAccountCreateText()}
-                            {this._renderAccountCreateForm()}
-                        </>
-                    ) : step === 2 ? (
-                        this._renderBackup()
-                    ) : null}
+                    {step === 1
+                        ? this._renderAccountCreateForm()
+                        : step === 2
+                        ? this._renderBackup()
+                        : this._renderGetStarted()}
                 </div>
 
                 <div style={{maxWidth: "95vw", paddingTop: "2rem"}}>
                     {step === 1
-                        ? null
+                        ? this._renderAccountCreateText()
                         : step === 2
                         ? this._renderBackupText()
                         : this._renderGetStartedText()}
                 </div>
                 <Link to="/">
                     <button className="button primary hollow">
-                        <Translate content="wallet.enter" />
+                        <Translate content="wallet.back" />
                     </button>
                 </Link>
             </div>
@@ -658,7 +594,7 @@ class CreateAccount extends React.Component {
     }
 }
 
-CreateAccount = withRouter(withGoogleReCaptcha(CreateAccount));
+CreateAccount = withRouter(CreateAccount);
 
 export default connect(CreateAccount, {
     listenTo() {

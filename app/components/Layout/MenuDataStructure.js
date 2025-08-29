@@ -71,7 +71,7 @@ class MenuDataStructure {
             allItems.account,
             allItems.market,
             allItems.lending,
-            allItems.listing,
+           // allItems.listing,
             allItems.deposit_withdraw
             ];
     }
@@ -128,7 +128,7 @@ class MenuDataStructure {
             allItems.spotlight,
             allItems.lending,
             allItems.market,
-            allItems.poolmart,
+            //allItems.poolmart,
             //allItems.explorer,
             allItems.divider,
             allItems.deposit,
@@ -137,7 +137,7 @@ class MenuDataStructure {
             //allItems.account_voting,
             allItems.insight,
             allItems.divider,
-            allItems.listing,
+            //allItems.listing,
             //allItems.bots,
             // allItems.account_voting,
             // allItems.account_assets,
@@ -290,7 +290,7 @@ class MenuDataStructure {
                 target: "/liquidity-exchange",
                 icon: {name: "poolmart", title: "icons.poolmart.title"},
                 text: "header.poolmart",
-                inHeaderBehavior: MenuItemType.Always,
+                inHeaderBehavior: MenuItemType.Never,
                 inDropdownBehavior: MenuItemType.Never
             }),
             lending: state => ({

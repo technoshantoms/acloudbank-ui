@@ -83,7 +83,7 @@ class Footer extends React.Component {
     componentDidMount() {
         this.checkNewVersionAvailable.call(this);
 
-        this.downloadLink = "https://github.com/bitshares/bitshares-ui/releases/latest";
+        this.downloadLink = "https://github.com/acloudbank/releases/latest";
 
         let ensure = this._ensureConnectivity.bind(this);
         ifvisible.on("wakeup", function() {
@@ -112,7 +112,7 @@ class Footer extends React.Component {
     checkNewVersionAvailable() {
         if (__ELECTRON__) {
             fetch(
-                "https://api.github.com/repos/bitshares/bitshares-ui/releases/latest"
+                "https://api.github.com/repos/acloudbank/releases/latest"
             )
                 .then(res => {
                     return res.json();
@@ -149,7 +149,7 @@ class Footer extends React.Component {
         var theme = SettingsStore.getState().settings.get("themes");
 
         if (hintData.length == 0) {
-            this.props.history.push("/help");
+            this.props.history.push("help");
         } else {
             guide
                 .introJs()
@@ -493,7 +493,7 @@ class Footer extends React.Component {
                                     />
                                     {__GIT_BRANCH__ === "staging" ? (
                                         <a
-                                            href={`https://github.com/bitshares/bitshares-ui/commit/${version.trim()}`}
+                                            href={`https://github.com/acloudbank/commit/${version.trim()}`}
                                             className="version external-link"
                                             target="_blank"
                                             rel="noopener noreferrer"

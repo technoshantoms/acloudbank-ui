@@ -1,16 +1,16 @@
 # Help
 
-This is the reference wallet of BitShares Blockchain which connects to BitShares Blockchain nodes (bitshares-core).
+This is the reference wallet of acloudbank e-Database which connects to acloudbank e-Database nodes (acloudbank-core).
 
 This help section gives a brief overview and describes the most basic concepts
 of this application.
 
 ## Introduction 
  * [Disclaimer](disclaimer.md)
- * [BitShares](introduction/bitshares.md)
+ * [AcloudBank](introduction/acloudbank.md)
  * [Wallet](introduction/wallets.md)
  * [Backups](introduction/backups.md)
- * [Blockchain](introduction/blockchain.md)
+ * [e-Database](introduction/e-Database.md)
  * [Witnesses](introduction/witness.md)
  * [Workers](introduction/workers.md)
  * [Committe Members](introduction/committee.md)
@@ -31,7 +31,7 @@ of this application.
  * [Short Selling BitAssets](dex/shorting.md)
 
 ## Development
- * [Bitshares UI Github](https://github.com/bitshares/bitshares-ui)
+ * [acloudbank UI Github](https://github.com/acloudbank/acloudbank-ui)
 
 ----------
 [Glossary](glossary.md)

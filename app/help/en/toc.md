@@ -1,10 +1,10 @@
 #### Help
 
  * [Disclaimer](disclaimer.md)
- * [BitShares](introduction/bitshares.md)
+ * [AcloudBank](introduction/AcloudBank.md)
  * [Wallet](introduction/wallets.md)
  * [Backups](introduction/backups.md)
- * [Blockchain](introduction/blockchain.md)
+ * [eDatabase](introduction/eDatabase.md)
  * [Voting](voting.md)
  * [Accounts](accounts/general.md)
  * [Proposed Transactions](accounts/proposed.md)
@@ -17,5 +17,4 @@
  * [Trading](dex/trading.md)
  * [Short Selling BitAssets](dex/shorting.md)
  * [Gateways](gateways/introduction.md)
-    * [Xbts](gateways/xbtsx.md)
-    * [ioxbank](gateways/ioxbank.md)
+  

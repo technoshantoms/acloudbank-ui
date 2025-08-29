@@ -436,7 +436,19 @@ class CreateAccount extends React.Component {
                     <Translate content="wallet.wallet_browser" />
                 </h4>
 
-               
+                <Translate
+                    style={{textAlign: "left"}}
+                    component="p"
+                    content="wallet.create_account_text_when_you_create_your_first_rsquared_account"
+                />
+
+                <Translate
+                    style={{textAlign: "left"}}
+                    unsafe
+                    component="p"
+                    content="wallet.create_account_text_you_should_take_the_time_to_back_up_your_account"
+                />
+
                 <Translate
                     style={{textAlign: "left"}}
                     unsafe
@@ -461,7 +473,12 @@ class CreateAccount extends React.Component {
                     component="p"
                     content="wallet.create_account_text_3_you_can_create_a_brainkey"
                 />
-              
+                <Translate
+                    style={{textAlign: "left", marginTop: "10px"}}
+                    unsafe
+                    component="p"
+                    content="wallet.since_your_wallet_is_on_your_browser_locally"
+                />
 
                 {firstAccount ? (
                     <Translate

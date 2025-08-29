@@ -1,7 +1,7 @@
 import {getFaucet, getTestFaucet} from "../branding";
 import {
     EES_BASE_URL,
-    //RECAPTCHA_KEY,
+    RECAPTCHA_KEY,
     REGISTRATION_SERVICE_BASE_URL,
     DEFAULT_WS_NODE,
     WS_NODE_LIST_URL_NODE1,
@@ -9,44 +9,37 @@ import {
     WS_NODE_LIST_URL_NODE3
 } from "./env.js";
 
-export const ioxbankAPIs = {
-    BASE: "https://api.ioxbank.com/bitshares",
-    COINS_LIST: "/coins",
-    ACTIVE_WALLETS: "/active-wallets",
-    TRADING_PAIRS: "/trading-pairs",
-    NEW_DEPOSIT_ADDRESS: "/simple-api/initiate-trade"
+export const xbtsxAPIs = {
+    //BASE: "http://localhost:3080/api/v2", //for tests local
+    BASE: "https://apis.xbts.io/api/v2", // new !!!
+    COINS_LIST: "/coin"
 };
+
+export const wavesAPIs = {
+    BASE: "https://apis.xbts.io/waves",
+    COINS_LIST: "/coin"
+};
+
 export const bscAPIs = {
-    BASE: "https://api.ioxbank.com/bitshares",
-    COINS_LIST: "/coins",
-    ACTIVE_WALLETS: "/active-wallets",
-    TRADING_PAIRS: "/trading-pairs",
-    NEW_DEPOSIT_ADDRESS: "/simple-api/initiate-trade"
+    BASE: "https://apis.xbts.io/bsc",
+    COINS_LIST: "/coin"
+};
+
+export const ethAPIs = {
+    BASE: "https://apis.xbts.io/eth",
+    COINS_LIST: "/coin"
 };
 
 export const eosAPIs = {
-    BASE: "https://api.ioxbank.com/bitshares",
-    COINS_LIST: "/coins",
-    ACTIVE_WALLETS: "/active-wallets",
-    TRADING_PAIRS: "/trading-pairs",
-    NEW_DEPOSIT_ADDRESS: "/simple-api/initiate-trade"
+    BASE: "https://apis.xbts.io/eos",
+    COINS_LIST: "/coin"
 };
 
+export const tonAPIs = {
+    BASE: "https://apis.xbts.io/ton",
+    COINS_LIST: "/coin"
+};
 
-export const wavesAPIs = {
-    BASE: "https://api.ioxbank.com/bitshares",
-    COINS_LIST: "/coins",
-    ACTIVE_WALLETS: "/active-wallets",
-    TRADING_PAIRS: "/trading-pairs",
-    NEW_DEPOSIT_ADDRESS: "/simple-api/initiate-trade"
-};
-export const ethAPIs = {
-    BASE: "https://api.ioxbank.com/bitshares",
-    COINS_LIST: "/coins",
-    ACTIVE_WALLETS: "/active-wallets",
-    TRADING_PAIRS: "/trading-pairs",
-    NEW_DEPOSIT_ADDRESS: "/simple-api/initiate-trade"
-};
 export const blockTradesAPIs = {
     BASE: "https://api.blocktrades.us/v2",
     COINS_LIST: "/coins",
@@ -68,12 +61,6 @@ export const openledgerAPIs = {
     RPC_URL: "https://openledger.info/api/"
 };
 
-export const rudexAPIs = {
-    BASE: "https://gateway.rudex.org/api/rudex",
-    COINS_LIST: "/coins",
-    NEW_DEPOSIT_ADDRESS: "/simple-api/initiate-trade"
-};
-
 export const bitsparkAPIs = {
     BASE: "https://dex-api.bitspark.io/api/v1",
     COINS_LIST: "/coins",
@@ -82,14 +69,6 @@ export const bitsparkAPIs = {
     DEPOSIT_LIMIT: "/deposit-limits",
     ESTIMATE_OUTPUT: "/estimate-output-amount",
     ESTIMATE_INPUT: "/estimate-input-amount"
-};
-
-export const cryptoBridgeAPIs = {
-    BASE: "https://api.crypto-bridge.org/api/v1",
-    COINS_LIST: "/coins",
-    ACTIVE_WALLETS: "/wallets",
-    MARKETS: "/markets",
-    TRADING_PAIRS: "/trading-pairs"
 };
 
 export const citadelAPIs = {
@@ -102,16 +81,9 @@ export const citadelAPIs = {
     ESTIMATE_INPUT: "/estimate-input-amount"
 };
 
-export const gdex2APIs = {
-    BASE: "https://gateway.rudex.org/api/adjust",
-    COINS_LIST: "/coins",
-    ACTIVE_WALLETS: "/active-wallets",
-    TRADING_PAIRS: "/trading-pairs"
-};
-
 // Legacy Deposit/Withdraw
 export const gdexAPIs = {
-    BASE: "https://https://gateway.rudex.org",
+    BASE: "https://api.52bts.net",
     ASSET_LIST: "/gateway/asset/assetList",
     ASSET_DETAIL: "/gateway/asset/assetDetail",
     GET_DEPOSIT_ADDRESS: "/gateway/address/getAddress",
@@ -125,10 +97,11 @@ export const gdexAPIs = {
     WITHDRAW_RULE: "/gateway/withdraw/rule"
 };
 
-export const xbtsxAPIs = {
-    BASE: "",
-    COINS_LIST: ""
+export const pirateCashAPIs = {
+    BASE: "https://pirate.cash/dexapi",
+    COINS_LIST: "/coins"
 };
+
 
 export const nodeRegions = [
     // region of the node follows roughly https://en.wikipedia.org/wiki/Subregion#/media/File:United_Nations_geographical_subregions.png
@@ -160,28 +133,28 @@ export const nodeRegions = [
 export const settingsAPIs = {
     // If you want a location to be translated, add the translation to settings in locale-xx.js
     // and use an object {translate: key} in WS_NODE_LIST
-    DEFAULT_WS_NODE,
+    DEFAULT_WS_NODE: DEFAULT_WS_NODE,
     WS_NODE_LIST: [
-        {
-            url: "ws://localhost:8090",
-            location: "Locally hosted"
+              {
+            url: "ws://localhost:8090/ws",
+            location: "Satia LTD,"
         },
-          {
-            url: WS_NODE_LIST_URL_NODE1,
-            location: "CloudBank LLC node",
-            region: "Northern America",
+        {
+            url: WS_NODE_LIST_URL_NODE2,
+            location: "Homepesa Group LLC",
+            region: "North America",
             country: "USA"
         },
         {
             url: WS_NODE_LIST_URL_NODE2,
-            location: "LocalBank LLC node",
-            region: "Asia",
-            country: "India"
+            location: "Homepesa Group LLC",
+            region: "North America",
+            country: "USA"
         },
         {
             url: WS_NODE_LIST_URL_NODE3,
-            location: "CloudBank Labs LLC node",
-            region: "Africa America",
+            location: "R-Squared Labs LLC node",
+            region: "Northern America",
             country: "USA"
         }
     ],
@@ -203,8 +176,8 @@ export const EesAPI = {
 
 export const RegistrationServiceAPI = {
     BASE: REGISTRATION_SERVICE_BASE_URL,
-    ACCOUNTS_ENDPOINT: "/api/v1/accounts"
-    //ReCAPTCHA_KEY: RECAPTCHA_KEY
+    ACCOUNTS_ENDPOINT: "/api/v1/accounts",
+    ReCAPTCHA_KEY: RECAPTCHA_KEY
 };
 
 export const TokenDistributionAPI = {

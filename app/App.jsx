@@ -226,6 +226,8 @@ import Deposit from "./components/Account/Deposit/Index";
 import Withdraw from "./components/Account/Withdraw/Index";
 import GatewayActions from "./actions/GatewayActions";
 import {allowedGateway} from "./branding";
+import {RegistrationServiceAPI} from "./api/apiConfig";
+import {GoogleReCaptchaProvider} from "react-google-recaptcha-v3";
 
 class App extends React.Component {
     constructor() {
@@ -505,6 +507,9 @@ class App extends React.Component {
                     : "committee-account";
             content = (
                 <div className="grid-frame vertical">
+                 <GoogleReCaptchaProvider
+                        reCaptchaKey={RegistrationServiceAPI.ReCAPTCHA_KEY}
+                    >
                     <NewsHeadline />
                     <Header height={this.state.height} {...others} />
                     <div id="mainContainer" className="grid-block">
@@ -693,6 +698,7 @@ class App extends React.Component {
                         type={theme === "lightTheme" ? "dark" : "light"}
                         effect="solid"
                     />
+                     </GoogleReCaptchaProvider>
                 </div>
             );
         }

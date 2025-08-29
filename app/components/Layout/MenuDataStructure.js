@@ -71,7 +71,7 @@ class MenuDataStructure {
             allItems.account,
             allItems.market,
             allItems.lending,
-            allItems.listing,
+            //allItems.listing,
             allItems.deposit_withdraw
             ];
     }
@@ -101,7 +101,7 @@ class MenuDataStructure {
         allItems.insight = function(state) {
             let item = oldinsight(state);
             let submenu = [
-                //allItems.account_voting,
+                allItems.account_voting,
                 allItems.account_assets,
                 allItems.account_pools,
                 allItems.account_signedmessages,
@@ -134,10 +134,10 @@ class MenuDataStructure {
             allItems.deposit,
             allItems.withdraw,
             allItems.settings,
-            //allItems.account_voting,
+            allItems.account_voting,
             allItems.insight,
             allItems.divider,
-            allItems.listing,
+           // allItems.listing,
             //allItems.bots,
             // allItems.account_voting,
             // allItems.account_assets,
@@ -204,7 +204,7 @@ class MenuDataStructure {
                 icon: "dashboard",
                 text: "header.dashboard",
                 inHeaderBehavior: MenuItemType.WhenAccount,
-                inDropdownBehavior: MenuItemType.WhenAccount
+                inDropdownBehavior: MenuItemType.Always
             }),
             account: state => ({
                 includePattern: ["/"],
@@ -290,7 +290,7 @@ class MenuDataStructure {
                 target: "/liquidity-exchange",
                 icon: {name: "poolmart", title: "icons.poolmart.title"},
                 text: "header.poolmart",
-                inHeaderBehavior: MenuItemType.Always,
+                inHeaderBehavior: MenuItemType.Never,
                 inDropdownBehavior: MenuItemType.Never
             }),
             lending: state => ({
@@ -355,7 +355,7 @@ class MenuDataStructure {
                 },
                 text: "header.deposit-withdraw",
                 inHeaderBehavior: MenuItemType.Never,
-                inDropdownBehavior: MenuItemType.Always
+                inDropdownBehavior: MenuItemType.Never
             }),
 
             withdraw: () => ({
@@ -484,8 +484,8 @@ class MenuDataStructure {
                 target: `/account/${state.currentAccount}/pools`,
                 icon: "pools",
                 text: "account.liquidity_pools.title",
-                inHeaderBehavior: MenuItemType.Dynamic,
-                inDropdownBehavior: MenuItemType.WhenAccount
+                inHeaderBehavior: MenuItemType.Never,
+                inDropdownBehavior: MenuItemType.Never
             }),
             account_signedmessages: state => ({
                 includePattern: "/signedmessages",

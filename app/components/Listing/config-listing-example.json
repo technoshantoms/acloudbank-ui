@@ -1,0 +1,235 @@
+[
+    {
+        "name": "Idena",
+        "active": "yes",
+        "ticker": "IDNA",
+        "page": "https://www.idena.io",
+        "account": "rudex-idena",
+        "goal": 10000,
+        "votes": 0
+    },
+    {
+        "name": "Zcash",
+        "active": "yes",
+        "ticker": "ZEC",
+        "page": "https://z.cash/",
+        "account": "rudex-zec",
+        "goal": 3000,
+        "votes": 0
+    },
+    {
+        "name": "ADAMANT Messenger",
+        "active": "yes",
+        "ticker": "ADM",
+        "page": "https://adamant.im",
+        "account": "rudex-adamant",
+        "goal": 10000,
+        "votes": 0
+    },
+    {
+        "name": "Hive",
+        "active": "yes",
+        "ticker": "HIVE",
+        "page": "https://hive.io",
+        "account": "rudex-hive",
+        "goal": 4000,
+        "votes": 0
+    },
+    {
+        "name": "Minter Network",
+        "active": "yes",
+        "ticker": "BIP",
+        "page": "https://minter.org",
+        "account": "rudex-bip",
+        "goal": 7000,
+        "votes": 0
+    },
+    {
+        "name": "Dash",
+        "active": "yes",
+        "ticker": "DASH",
+        "page": "https://www.dash.org",
+        "account": "rudex-dash",
+        "goal": 3000,
+        "votes": 0
+    },
+    {
+        "name": "Dogecoin",
+        "active": "yes",
+        "ticker": "DOGE",
+        "page": "https://dogecoin.com",
+        "account": "rudex-dogecoin",
+        "goal": 3000,
+        "votes": 0
+    },
+    {
+        "name": "Toncoin",
+        "active": "yes",
+        "ticker": "TON",
+        "page": "https://ton.org",
+        "account": "rudex-ton",
+        "goal": 3000,
+        "votes": 0
+    },
+    {
+        "name": "Telos",
+        "active": "yes",
+        "ticker": "TLOS",
+        "page": "https://www.telos.net",
+        "account": "rudex-telos",
+        "goal": 5000,
+        "votes": 0
+    },
+    {
+        "name": "Ark",
+        "active": "yes",
+        "ticker": "ARK",
+        "page": "https://ark.io",
+        "account": "rudex-ark",
+        "goal": 5000,
+        "votes": 0
+    },
+    {
+        "name": "Crypto International",
+        "active": "yes",
+        "page": "https://cri.network",
+        "ticker": "CRI",
+        "account": "rudex-cri",
+        "goal": 5000,
+        "votes": 0
+    },
+    {
+        "name": "Gowin",
+        "active": "yes",
+        "ticker": "GWN",
+        "page": "http://www.gwncoin.com",
+        "account": "rudex-gwn",
+        "goal": 5000,
+        "votes": 0
+    },
+    {
+        "name": "Ratcoin",
+        "active": "yes",
+        "ticker": "RAT",
+        "page": "https://ratcoin.network",
+        "account": "rudex-ratcoin",
+        "goal": 10000,
+        "votes": 0
+    },
+    {
+        "name": "WorldTTT",
+        "active": "yes",
+        "ticker": "TTT",
+        "page": "https://worldttt.com",
+        "account": "rudex-ttt",
+        "goal": 10000,
+        "votes": 0
+    },
+    {
+        "name": "Clean the World",
+        "active": "yes",
+        "ticker": "CTW",
+        "page": "https://www.clean-the-world-official.com",
+        "account": "rudex-ctw",
+        "goal": 5000,
+        "votes": 0
+    },
+    {
+        "name": "WaterCoin Acua",
+        "active": "yes",
+        "ticker": "WCA",
+        "page": "https://watercoinacua.com",
+        "account": "rudex-wca",
+        "goal": 5000,
+        "votes": 0
+    },
+    {
+        "name": "Camino Token",
+        "active": "yes",
+        "ticker": "CAMINO",
+        "page": "https://www.caminotoken.com",
+        "account": "rudex-camino",
+        "goal": 5000,
+        "votes": 0
+    },
+    {
+        "name": "OJA Coin",
+        "ticker": "OJX",
+        "page": "https://ojacoin.org",
+        "account": "rudex-ojx",
+        "goal": 10000,
+        "votes": 0
+    },
+    {
+        "name": "GoDonr",
+        "active": "yes",
+        "ticker": "Donr",
+        "page": "https://godonr.com/home",
+        "account": "rudex-donr",
+        "goal": 5000,
+        "votes": 0
+    },
+    {
+        "name": "Basic Attention Token",
+        "active": "yes",
+        "ticker": "BAT",
+        "page": "https://basicattentiontoken.org",
+        "account": "rudex-bat",
+        "goal": 3000,
+        "votes": 0
+    },
+    {
+        "name": "JustBam",
+        "active": "yes",
+        "ticker": "BAM",
+        "page": "https://bam.justbam.money",
+        "account": "rudex-bam",
+        "goal": 5000,
+        "votes": 0
+    },
+    {
+        "name": "Dalmata Coin",
+        "active": "yes",
+        "ticker": "DC",
+        "page": "https://dalmatacoin.com",
+        "account": "rudex-dalmata",
+        "goal": 5000,
+        "votes": 0
+    },
+    {
+        "name": "BlockChainCoinX",
+        "active": "yes",
+        "ticker": "BCCX",
+        "page": "https://blockchaincoin.dev",
+        "account": "rudex-bccx",
+        "goal": 10000,
+        "votes": 0
+    },
+    {
+        "name": "Waves",
+        "active": "yes",
+        "ticker": "WAVES",
+        "page": "https://waves.exchange",
+        "account": "rudex-waves",
+        "goal": 4000,
+        "votes": 0
+    },
+    {
+        "name": "Neo",
+        "active": "yes",
+        "ticker": "NEO",
+        "page": "https://neo.org",
+        "account": "rudex-neo",
+        "goal": 3000,
+        "votes": 0
+    },
+    {
+        "name": "Revain",
+        "active": "yes",
+        "ticker": "REV",
+        "page": "http://revain.org",
+        "account": "rudex-revain",
+        "goal": 10000,
+        "votes": 0
+    }
+]

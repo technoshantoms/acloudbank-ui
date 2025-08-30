@@ -3371,12 +3371,12 @@
     },
     "xbtsx": {
         "account": {
-            "id": "Staking ID",
+            "id": "Investment ID",
             "title": "Stake your AcloudBank Asset (e.g. USD, ACB, GOLD e.t.c) to earn profits from the network",
-            "staking_amount": "Staking amount",
-            "remaining": "Remaining in staking period",
-            "staking_text1": "Everyone who stakes is entitled to %(percent)s of the network profits. Staking will lock your money for the time you specify below. During the staking period you automatically take part in the profit distributions. Payouts happen every 14th day of the week.",
-            "staking_text2": "A longer staking duration results in a bigger profit factor. After the staking period has been reached, you can reclaim your staked balance with the <b>'Claim Now'</b> button. The network fee to start a new staking position is currently set at <b>%(fee)s ACB</b>. The network fee to reclaim your staked is currently set at <b>%(reclaimFee)s ACB.</b><br>Minimal Stake 1 ACB (AcloudBank Asset)",
+            "staking_amount": "Investment amount",
+            "remaining": "Remaining in Investment period",
+            "staking_text1": "Everyone who invest is entitled to %(percent)s of the network profits. Investment will lock your money for the time you specify below. During the Investment period you automatically take part in the profit distributions. Payouts happen every 14th day of the week.",
+            "staking_text2": "A longer Investment duration results in a bigger profit factor. After the Investment period has been reached, you can reclaim your staked balance with the <b>'Claim Now'</b> button. The network fee to start a new Investment position is currently set at <b>%(fee)s ACB</b>. The network fee to reclaim your staked is currently set at <b>%(reclaimFee)s ACB.</b><br>Minimal Stake 1 ACB (AcloudBank Asset)",
             "staking_text3": "You can only stake that you have deposited into the <b>network</b>. You can find more information about the advantages of the <b>ACB network</b> and its profit sharing at <a target=\"_new\" href=\"https://homepesa.com\">homepesa.com</a>. ",
             "status": "Status",
             "staking": "Smart Investor",
@@ -3391,10 +3391,10 @@
             "mpsix": "6 Months",
             "mptwelve": "12 Months",
             "amount_sth": "Amount of to stake",
-            "stake_sth": "Create a new staking position",
-            "length": "Staking duration",
-            "understand": "I hereby agree that by staking %(amount)s ACB, I fully understand that they will be locked away for %(month)s and that there is no way of claiming the funds before the staking term is over. I also accept the share in the profits of XACB platform which is attributed to my staked funds.",
-            "no_balances": "You have no open XACB staking positions.",
+            "stake_sth": "Create a new Investment position",
+            "length": "Investment duration",
+            "understand": "I hereby agree that by Investment %(amount)s ACB, I fully understand that they will be locked away for %(month)s and that there is no way of claiming the funds before the Investment term is over. I also accept the share in the profits of XACB platform which is attributed to my staked funds.",
+            "no_balances": "You have no open XACB Investment positions.",
             "sth_available": "Available: ",
             "sth_not_available": "No available "
         }

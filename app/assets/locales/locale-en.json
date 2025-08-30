@@ -3372,7 +3372,7 @@
     "xbtsx": {
         "account": {
             "id": "Investment ID",
-            "title": "investment your AcloudBank Asset (e.g. USD, ACB, GOLD e.t.c) to earn profits from the network",
+            "title": "Invest your AcloudBank Asset (e.g. USD, ACB, GOLD e.t.c) to earn profits from the network",
             "staking_amount": "Investment amount",
             "remaining": "Remaining in Investment period",
             "staking_text1": "Everyone who invest is entitled to %(percent)s of the network profits. Investment will lock your money for the time you specify below. During the Investment period you automatically take part in the profit distributions. Payouts happen every 14th day of the week.",

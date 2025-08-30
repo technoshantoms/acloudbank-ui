@@ -3390,11 +3390,11 @@
             "mpthree": "3 Months",
             "mpsix": "6 Months",
             "mptwelve": "12 Months",
-            "amount_sth": "Amount to stake",
+            "amount_sth": "Amount to invest X10",
             "stake_sth": "Create a new Investment position",
             "length": "Select Investment duration below",
             "understand": "I hereby agree that by Investment %(amount)s ACB, I fully understand that they will be locked away for %(month)s and that there is no way of claiming the funds before the Investment term is over. I also accept the profit in the profits of XACB platform which is attributed to my staked funds.",
-            "no_balances": "You have no open XACB Investment positions.",
+            "no_balances": "You have no open ACB Investment positions.",
             "sth_available": "Available: ",
             "sth_not_available": "No available "
         }

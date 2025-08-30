@@ -93,7 +93,7 @@
             "stake_status": "Stake/Unstake",
             "taker_fee": "Taker Fee",
             "title": "Pools",
-            "unstake_fee": "Uninvestment Fee"
+            "unstake_fee": "Withdrawal Fee"
         },
         "login_with": "Login with",
         "market_actions": "Market actions",

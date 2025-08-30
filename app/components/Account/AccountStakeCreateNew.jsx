@@ -234,7 +234,7 @@ class AccountStakeCreateNew extends React.Component {
 
     _setStakingPeriod = stakingPeriodValue => {
         this.setState({
-            stakingPeriodValue: parseInt(stakingPeriodValue.target.value, 10)
+            stakingPeriodValue: parseInt(stakingPeriodValue.target.value, 1)
         });
     };
 
@@ -247,7 +247,7 @@ class AccountStakeCreateNew extends React.Component {
             const {account} = this.props;
             const {asset, stakingPeriodValue} = this.state;
 
-            if (asset.getAmount({real: true}) > 99900) {
+            if (asset.getAmount({real: true}) > 0.2) {
                 XbtsActions.stakeBalance(
                     account.get("id"),
                     stakingPeriodValue,

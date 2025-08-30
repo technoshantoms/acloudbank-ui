@@ -63,7 +63,7 @@
         "ignore": "Hide",
         "inCollateral": "In Collateral",
         "inOrders": "In Orders",
-        "inVestingBalances": "In share Balances",
+        "inVestingBalances": "In profit Balances",
         "in_open": "This is the amount of %(asset)s you have in open orders.",
         "in_open_value": "This is the estimated value of the %(asset)s you have in open orders.",
         "intro_text_1": "The decentralized corporate database",
@@ -93,7 +93,7 @@
             "stake_status": "Stake/Unstake",
             "taker_fee": "Taker Fee",
             "title": "Pools",
-            "unstake_fee": "Unstake Fee"
+            "unstake_fee": "Uninvestment Fee"
         },
         "login_with": "Login with",
         "market_actions": "Market actions",
@@ -105,18 +105,18 @@
             "available": "Available to claim",
             "balance_type": "Type",
             "basic": "Basic member",
-            "cashback": "Shares balance amount",
+            "cashback": "Investment balance amount",
             "claim": "Claim now",
-            "coindays": "Shares day",
+            "coindays": "profit day",
             "days": "days",
-            "earned": "Shares day earned",
+            "earned": "Investment day earned",
             "expires": "expires",
             "fee_allocation": "Fee Allocation",
             "fee_division": "Fee Division",
             "fee_division_text": {
                 "paragraph_1": "Every time %(account)s pays a transaction fee, that fee is divided among several different accounts. The network ta ACB %(fee_share_network)s%. The Lifetime Member who referred %(account)s taACB %(fee_share_ltm)s%.",
-                "paragraph_2": "The registrar is the account that paid the transaction fee to register %(account)s with the network and decide how to divide the remaining %(fee_share_registrar)s% between themselves and their own Affiliate Referrer program. %(account)s's registrar chose to share %(fee_share_affiliate)s% of the total fee with the Affiliate Referrer.",
-                "paragraph_3": "Fee shares, market rewards and other rewards is found on the share Balances page"
+                "paragraph_2": "The registrar is the account that paid the transaction fee to register %(account)s with the network and decide how to divide the remaining %(fee_share_registrar)s% between themselves and their own Affiliate Referrer program. %(account)s's registrar chose to profit %(fee_share_affiliate)s% of the total fee with the Affiliate Referrer.",
+                "paragraph_3": "Fee shares, market rewards and other rewards is found on the profit Balances page"
             },
             "fee_pending": "Pending Fees",
             "fee_pending_text": "Fees paid by %(account)s are divided among the network, referrers, and registrars once every maintenance interval (%(maintenanceInterval)s seconds). The next maintenance time is %(nextMaintenanceTime)s.",
@@ -140,7 +140,7 @@
             "referrer": "Affiliate Referrer",
             "registrar": "Registrar",
             "remaining": "Days left of shares period",
-            "required": "Shares day required",
+            "required": "Investment day required",
             "rewards": "Cashback Rewards",
             "stats": "Membership stats",
             "info": "Membership Info",
@@ -372,9 +372,9 @@
         },
         "vesting": {
             "balance_number": "Balance #%(id)s",
-            "explain": "Share balances contain any fees earned through the referral program or from worker pay, for example. They have a certain share period and are continually unlocked during that share period until all of the balances are available",
-            "no_balances": "This account has no share balances",
-            "title": "Shares balances",
+            "explain": "Share balances contain profit earned from the network or from development pay. They have a certain profit period and are continually unlocked during that profit period until all of the prifits are available",
+            "no_balances": "This account has no profit balances",
+            "title": "Investment earnings",
             "type": {
                 "cashback": "Cashback",
                 "market_fee_sharing": "Market fee sharing",
@@ -450,7 +450,7 @@
             "votes_against": "Votes against",
             "w_approved_by": "Witnesses approved by %(account)s",
             "w_not_approved_by": "Witnesses not approved by %(account)s",
-            "witness": "Witness name",
+            "witness": "agent name",
             "worker_account": "Worker account",
             "workers": "Budget Items",
             "workers_short": "Workers"
@@ -927,7 +927,7 @@
             "collateral": {
                 "bid": "Bid Collateral",
                 "bid_price": "Bid price",
-                "bid_text": "Unfortunately, %(asset)s is in Global Settlement. During this time it is possible to bid on the collateral in the Settlement Fund and the debt it covers. When the total outstanding debt is covered by bids, and the additional collateral of each bid plus its share from the settlement fund is greater than the MCR, the asset is automatically revived and a margin position is created for each bid.",
+                "bid_text": "Unfortunately, %(asset)s is in Global Settlement. During this time it is possible to bid on the collateral in the Settlement Fund and the debt it covers. When the total outstanding debt is covered by bids, and the additional collateral of each bid plus its profit from the settlement fund is greater than the MCR, the asset is automatically revived and a margin position is created for each bid.",
                 "remove_bid": "A bid can be removed by placing a zero collateral bid."
             },
             "collateral_bid": {
@@ -988,7 +988,7 @@
                 "tooltip_resolution_date": "The resolution date is an informal statement when the asset owner intends to resolve this betting market."
             },
             "price_feed": {
-                "external_feed_price": "Feed price (median of witness feeds)",
+                "external_feed_price": "Feed price (median of agent feeds)",
                 "feed_lifetime": "Feed lifetime (hours)",
                 "feed_price": "Feed price",
                 "global_settlement_price": "Global settlement Price will be",
@@ -1169,8 +1169,8 @@
             "period": "Duration",
             "title": "Worker name",
             "url_text": "You should supply a website, github document or google doc that describes in more detail the purpose of the worker and how you intend to use the worker pay.",
-            "vesting_pay": "Salary share period (days)",
-            "vesting_text": "The share period defines the number of days that worker earnings will vest before being fully claimable.",
+            "vesting_pay": "Salary profit period (days)",
+            "vesting_text": "The profit period defines the number of days that worker earnings will vest before being fully claimable.",
             "website": "Website"
         }
     },
@@ -2018,16 +2018,16 @@
         },
         "witness": {
             "confirm": "CONFIRM",
-            "create_witness": "Become a witness member",
-               "update_witness": "Update witness member",
+            "create_witness": "Become a agent member",
+               "update_witness": "Update agent member",
             "update_confirm": "UPDATE",
             "enter_public_signing_key": "Enter your public signing key",
             "invalid_key": "Public Key is invalid",
             "public_signing_key": "Public Signing Key",
-            "text": "After being voted in as an active witness you are added in the rotation of block producers and expected to produce blocks signed by your signing key and you are rewarded in ACB per produced block. Common criteria that help make your case are <ul><li>implementation of fallbacks (e.g. running a hot swap backup server) and appropriate server specifications to ensure a low number of missed blocks (e.g. high connectivity)</li><li>participation in block production and rolling releases of the testnet</li><li>provision of a public node for the community</li></ul> Submit a link to your website or forum post explaining why you would be a exemplary member to attract enough votes to become active.",
+            "text": "After being voted in as an active agent you are added in the rotation of block producers and expected to produce blocks signed by your signing key and you are rewarded in ACB per produced block. Common criteria that help make your case are <ul><li>implementation of fallbacks (e.g. running a hot swap backup server) and appropriate server specifications to ensure a low number of missed blocks (e.g. high connectivity)</li><li>participation in block production and rolling releases of the testnet</li><li>provision of a public node for the community</li></ul> Submit a link to your website or forum post explaining why you would be a exemplary member to attract enough votes to become active.",
             "url": "URL",
-            "web_example": "Enter link to your witness proposal post",
-            "witness_account": "Witness Account"
+            "web_example": "Enter link to your agent proposal post",
+            "witness_account": "agent Account"
         }
     },
     "notifications": {
@@ -2137,12 +2137,12 @@
         "transfer_account": "{account} ownership transferred to {to}",
         "unlisted_by": "{lister} unlisted the account {listee}",
         "update_account": "{account} updated their account data {change}",
-        "vesting_balance_withdraw": "{account} withdrew share balance of {amount}",
+        "vesting_balance_withdraw": "{account} withdrew profit balance of {amount}",
         "whitelisted_by": "{lister} whitelisted the account {listee}",
         "witness_create": "{account} was upgraded to become a witness",
-        "witness_pay": "Withdrew witness pay to account",
-        "witness_receive": "Received witness from witness",
-        "witness_update": "{account} update its witness info",
+        "witness_pay": "Withdrew agent pay to account",
+        "witness_receive": "Received agent from witness",
+        "witness_update": "{account} update its agent info",
         "worker_create": "{account} created a worker proposal with daily pay of {pay}",
         "commit_v3": "{account} placed commit with hash {hash}",
         "reveal_v3": "{account} placed reveal with value {value}"
@@ -2169,7 +2169,7 @@
             "delete_pool": "Delete",
             "exchange": "Exchange",
             "min_to_receive": "Min to receive",
-            "need_stake_first": "Need Stake The Pool First!",
+            "need_stake_first": "Need investment The Pool First!",
             "pool_id": "Pool Id",
             "share_asset": "Share Asset",
             "stake": "Stake",
@@ -2316,7 +2316,7 @@
             "owner_approvals_to_add": "Owner approval(s) added",
             "owner_approvals_to_remove": "Owner approval(s) removed"
         },
-        "vesting_balance_withdraw": "Withdraw {amount} from share balance of {account}",
+        "vesting_balance_withdraw": "Withdraw {amount} from profit balance of {account}",
         "votes": "Votes"
     },
     "proposal_create": {
@@ -2494,7 +2494,7 @@
             "account": "Account",
             "action": "Peer 1 (%(peer_left)s) offers to send %(assets_left)s to Peer 2 (%(peer_right)s) and receives %(assets_right)s in return. ",
             "add_escrow": "Add escrow",
-            "add_escrow_tooltip": "Adds or removes an escrow to this barter. This escrow will have to approve the resulting proposal as well. The escrow can serve as a witness only, or also be the custodian of Peer 1's funds.",
+            "add_escrow_tooltip": "Adds or removes an escrow to this barter. This escrow will have to approve the resulting proposal as well. The escrow can serve as a agent only, or also be the custodian of Peer 1's funds.",
             "balance_warning": "Balance Warning",
             "balance_warning_line": "wants to send a total of %(asset_amount)s %(asset_symbol)s, but only has %(asset_balance)s %(asset_symbol)s",
             "balance_warning_tooltip": "%(peer)s does not have enough funds to execute the transfers when the proposal gets approved and executes. This is not an issue when creating the proposal, but the balances must match when executed",
@@ -2508,7 +2508,7 @@
             "error_same_name_escrow": "The escrow can not be Peer 1 or Peer 2",
             "escrow_account": "Escrowing account",
             "escrow_as_custodian": "An escrow (%(escrow)s) is used as custodian which holds the funds of Peer 1 and which has to approve the barter before it can execute.",
-            "escrow_as_witness": "An escrow (%(escrow)s) is used as a witness which has to approve the barter before it can execute.",
+            "escrow_as_witness": "An escrow (%(escrow)s) is used as a agent which has to approve the barter before it can execute.",
             "escrow_payment": "Payment for escrow services",
             "escrow_payment_tooltip": "Being an escrow requires trust from both peers and should be considered a paid service. The escrow will be paid from Peer 1's account via an additional transfer in the proposal, which increases the overall fee for Peer 1. Set this value to zero to remove it, default value is equal to the transactions fee induced for the escrow.",
             "fee_due_now": "Fee due now",
@@ -2682,8 +2682,8 @@
             "share": {
                 "account": "Share with account",
                 "delete": "Remove permission",
-                "load_data": "To start sharing, load your personal data on the form above and select the account you want to share with.",
-                "same_user": "You cannot share data with yourself.",
+                "load_data": "To start sharing, load your personal data on the form above and select the account you want to profit with.",
+                "same_user": "You cannot profit data with yourself.",
                 "save": "Grant permission",
                 "select_parts": "Select personal data to share",
                 "title": "Share my data"
@@ -2990,15 +2990,15 @@
             "transfer": "Transfer",
             "transfer_from_blind": "Transfer from blinded account",
             "transfer_to_blind": "Transfer to blinded account",
-            "vesting_balance_create": "Create share balance",
-            "vesting_balance_withdraw": "Withdraw share balance",
+            "vesting_balance_create": "Create profit balance",
+            "vesting_balance_withdraw": "Withdraw profit balance",
             "withdraw_permission_claim": "Claim withdrawal permission",
             "withdraw_permission_create": "Create withdrawal permission",
             "withdraw_permission_delete": "Delete withdrawal permission",
             "withdraw_permission_update": "Update withdrawal permission",
             "witness_create": "Create witness",
             "witness_update": "Update witness",
-            "witness_withdraw_pay": "Witness pay withdrawal",
+            "witness_withdraw_pay": "agent pay withdrawal",
             "worker_create": "Create worker",
             "content_card_create": "Content card create",
             "content_card_update": "Content card update",
@@ -3014,7 +3014,7 @@
             "place_order": "Place order",
             "cancel_order": "Cancel order"
         },
-        "vesting_balance_create": "created share balance of",
+        "vesting_balance_create": "created profit balance of",
         "view_json": "Show raw json",
         "waiting": "Waiting for confirmation..",
         "whitelist_states": {
@@ -3372,12 +3372,12 @@
     "xbtsx": {
         "account": {
             "id": "Investment ID",
-            "title": "Stake your AcloudBank Asset (e.g. USD, ACB, GOLD e.t.c) to earn profits from the network",
+            "title": "investment your AcloudBank Asset (e.g. USD, ACB, GOLD e.t.c) to earn profits from the network",
             "staking_amount": "Investment amount",
             "remaining": "Remaining in Investment period",
             "staking_text1": "Everyone who invest is entitled to %(percent)s of the network profits. Investment will lock your money for the time you specify below. During the Investment period you automatically take part in the profit distributions. Payouts happen every 14th day of the week.",
-            "staking_text2": "A longer Investment duration results in a bigger profit factor. After the Investment period has been reached, you can reclaim your staked balance with the <b>'Claim Now'</b> button. The network fee to start a new Investment position is currently set at <b>%(fee)s ACB</b>. The network fee to reclaim your staked is currently set at <b>%(reclaimFee)s ACB.</b><br>Minimal Stake 1 ACB (AcloudBank Asset)",
-            "staking_text3": "You can only stake that you have deposited into the <b>network</b>. You can find more information about the advantages of the <b>ACB network</b> and its profit sharing at <a target=\"_new\" href=\"https://homepesa.com\">homepesa.com</a>. ",
+            "staking_text2": "A longer Investment duration results in a bigger profit factor. After the Investment period has been reached, you can reclaim your staked balance with the <b>'Claim Now'</b> button. The network fee to start a new Investment position is currently set at <b>%(fee)s ACB</b>. The network fee to reclaim your staked is currently set at <b>%(reclaimFee)s ACB.</b><br>Minimal investment 1 ACB (AcloudBank Asset)",
+            "staking_text3": "You can only investment that you have deposited into the <b>network</b>. You can find more information about the advantages of the <b>ACB network</b> and its profit sharing at <a target=\"_new\" href=\"https://homepesa.com\">homepesa.com</a>. ",
             "status": "Status",
             "staking": "Smart Investor",
             "days": "%(days)s Days",
@@ -3393,7 +3393,7 @@
             "amount_sth": "Amount of to stake",
             "stake_sth": "Create a new Investment position",
             "length": "Investment duration",
-            "understand": "I hereby agree that by Investment %(amount)s ACB, I fully understand that they will be locked away for %(month)s and that there is no way of claiming the funds before the Investment term is over. I also accept the share in the profits of XACB platform which is attributed to my staked funds.",
+            "understand": "I hereby agree that by Investment %(amount)s ACB, I fully understand that they will be locked away for %(month)s and that there is no way of claiming the funds before the Investment term is over. I also accept the profit in the profits of XACB platform which is attributed to my staked funds.",
             "no_balances": "You have no open XACB Investment positions.",
             "sth_available": "Available: ",
             "sth_not_available": "No available "

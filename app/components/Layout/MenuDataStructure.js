@@ -71,8 +71,10 @@ class MenuDataStructure {
             allItems.account,
             allItems.market,
             allItems.lending,
+            allItems.deposit,
+            allItems.withdraw
            // allItems.listing,
-            allItems.deposit_withdraw
+            //allItems.deposit_withdraw
             ];
     }
 
@@ -122,7 +124,7 @@ class MenuDataStructure {
             allItems.divider,
             allItems.transfer,
             allItems.divider,
-            allItems.deposit_withdraw,            
+            //allItems.deposit_withdraw,            
             //allItems.dashboard,
             allItems.account,
             allItems.spotlight,
@@ -319,45 +321,8 @@ class MenuDataStructure {
                 inHeaderBehavior: MenuItemType.Never,
                 inDropdownBehavior: MenuItemType.Always
             }),
-            deposit: state => ({
-                target: state.clickHandlers.showDeposit,
-                icon: {
-                    name: "deposit",
-                    title: "icons.deposit.deposit"
-                },
-                text: "modal.deposit.submit",
-                submenu: {
-                    target: "/deposit-withdraw",
-                    text: "header.deposit_legacy",
-                    disabled: !state.enableDepositWithdraw
-                },
-                disabled: !state.enableDepositWithdraw,
-                inDropdownBehavior: MenuItemType.WhenAccount
-            }),
-            withdraw: state => ({
-                target: state.clickHandlers.showWithdraw,
-                icon: "withdraw",
-                text: "modal.withdraw.submit",
-                submenu: {
-                    target: "/deposit-withdraw",
-                    text: "header.withdraw_legacy",
-                    disabled: !state.enableDepositWithdraw
-                },
-                disabled: !state.enableDepositWithdraw,
-                inDropdownBehavior: MenuItemType.WhenAccount
-            }),
-            deposit_withdraw: state => ({
-                includePattern: "deposit-withdraw",
-                target: "/deposit-withdraw",
-                icon: {
-                    name: "deposit-withdraw",
-                    title: "icons.deposit.deposit_withdraw"
-                },
-                text: "header.deposit-withdraw",
-                inHeaderBehavior: MenuItemType.Never,
-                inDropdownBehavior: MenuItemType.Always
-            }),
-
+           
+           
             withdraw: () => ({
                 target: "/withdraw/new",
                 icon: "withdraw",

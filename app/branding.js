@@ -103,11 +103,11 @@ export function getUnits() {
         "USD",
         "CNY",
         "BTC",
-        "EUR",
-        "XBTSX.USDT",
+        "EUR"
+       /* "XBTSX.USDT",
         "XBTSX.BTC",
         "XBTSX.RUB",
-        "USD"
+        "USD"*/
     ];
 }
 

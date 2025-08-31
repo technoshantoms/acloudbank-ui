@@ -232,13 +232,13 @@ module.exports = function(env) {
                             root_dir,
                             "app",
                             "components",
-                            "DepositWithdraw",
+                            //"DepositWithdraw",
                             "blocktrades",
                             "index.html"
                         ),
                         to: path.join(
                             outputPath,
-                            "deposit-withdraw",
+                           // "deposit-withdraw",
                             "index.html"
                         ),
                         toType: "file"

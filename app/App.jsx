@@ -84,13 +84,6 @@ const Listing = Loadable({
     loading: LoadingIndicator
 });
 
-const AccountDepositWithdraw = Loadable({
-    loader: () =>
-        import(
-            /* webpackChunkName: "deposit-withdraw" */ "./components/Account/AccountDepositWithdraw"
-        ),
-    loading: LoadingIndicator
-});
 
 const News = Loadable({
     loader: () => import(/* webpackChunkName: "news" */ "./components/News"),
@@ -540,16 +533,7 @@ class App extends React.Component {
                                     path="/invoice/:data"
                                     component={Invoice}
                                 />
-                                <Route
-                                    path="/deposit-withdraw"
-                                    exact
-                                    component={AccountDepositWithdraw}
-                                />
-                                 <Route
-                                    path="/deposit-withdraw"
-                                    exact
-                                    component={AccountDepositWithdraw}
-                                />
+                           
                                 <Route
                                         path="/deposit"
                                         component={Deposit}

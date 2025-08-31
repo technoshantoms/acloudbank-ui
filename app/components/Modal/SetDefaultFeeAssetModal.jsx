@@ -232,7 +232,7 @@ SetDefaultFeeAssetModal.defaultProps = {
     displayFees: false,
     forceDefault: false,
     current_asset: "1.3.0",
-    show: false
+    show: true
 };
 
 SetDefaultFeeAssetModal = connect(

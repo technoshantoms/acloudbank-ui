@@ -247,7 +247,7 @@ class AccountStakeCreateNew extends React.Component {
             const {account} = this.props;
             const {asset, stakingPeriodValue} = this.state;
 
-            if (asset.getAmount({real: true}) > 0.2) {
+            if (asset.getAmount({real: true}) > 0.1) {
                 XbtsActions.stakeBalance(
                     account.get("id"),
                     stakingPeriodValue,
@@ -374,7 +374,7 @@ class AccountStakeCreateNew extends React.Component {
                         })}
                     </select>
 
-                    {amount > 0 ? (
+                    {amount > 0.1 ? (
                         <label
                             className={
                                 showValidationErrors &&

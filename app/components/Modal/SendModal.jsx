@@ -663,7 +663,7 @@ class SendModal extends React.Component {
                                     >
                                         <Input.TextArea
                                             style={{marginBottom: 0}}
-                                            rows={3}
+                                            rows={1}
                                             value={memo}
                                             tabIndex={tabIndex++}
                                             onChange={this.onMemoChanged.bind(
